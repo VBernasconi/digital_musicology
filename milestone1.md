@@ -3,7 +3,7 @@
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
-### Research Question
+### Research Questions
 We want to study the impact of the Cold War on the Billboard Chart songs with the help of the metadata and audio features given by Spotify. We decided to choose the Cold War as historical background for the analysis because it was a big event for American society, and it had a huge effect on the society and the economy. In order to perform this analysis, we will look at socio-economical indicators such as minimum wages or mass shooting in addition to the songs of the Billboard chart.
 
 In a larger context, the idea of the project is to see if the Billboard chart reflects the changes happening in the American society in a historic-socio-economical context, and then to see if the Billboard chart is an indicator about the American society.
