@@ -1,7 +1,6 @@
 ### Digital Musicology
 
-## Understanding the impact of the cold war on the Billboard Chart: 
-## _When the american society reflects on music creation_
+# Understanding the impact of the cold war on the Billboard Chart:  _When the american society reflects on music creation_
 
 ### Group members
 - Marion Kramer: marion.kramer@epfl.ch
