@@ -1,12 +1,10 @@
 # Digital Musicology
-## Understanding historical impacts on music creations
+
+## Understanding the impact of the cold war on the Billboard Chart
+### When the american society reflects on music creation
+
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
-
-### TODO:
-- Définir une région du monde
-- Définir une période spécifique
-- Définir un type de musique
 
 ### Research Question
 - What do we want to study
