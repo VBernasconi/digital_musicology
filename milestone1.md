@@ -1,5 +1,5 @@
 ### Digital Musicology
-# Understanding the impact of the cold war on Billboard Charts:  _When the american society reflects on music creation_
+# Understanding the impact of the Cold War on Billboard Charts:  _When the american society reflects on music creation_
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
