@@ -4,6 +4,12 @@
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
 ### Research Questions
+Underlying research questions we will try to answer through the project:
+- How major socio-economical changes derived from the Cold war impacted american popular music?
+- What are the musical properties and/or genres that were more impacted by these events?
+- What are the most salient musical features with regards to this question?
+- Are there differences between musical genres, where they impacted in different ways?
+
 We want to study the impact of the Cold War on the Billboard Chart songs with the help of the metadata and audio features given by Spotify. We decided to choose the Cold War as historical background for the analysis because it was a big event for American society, and it had a huge effect on the society and the economy. In order to perform this analysis, we will look at socio-economical indicators such as minimum wages or mass shooting in addition to the songs of the Billboard chart.
 
 In a larger context, the idea of the project is to see if the Billboard chart reflects the changes happening in the American society in a historic-socio-economical context, and then to see if the Billboard chart is an indicator about the American society.
@@ -11,11 +17,6 @@ In a larger context, the idea of the project is to see if the Billboard chart re
 We are really interested in this research question because it will permit us to discover a new way to apprehend music and also to see which impact history can have on music.
 
 Possible outcomes are to see differences in audio features between songs that were in the Billboard Chart during the Cold War and the ones that were in it after, but also to see correlations between audio features of songs and socio-economical indicators.
-
-- How major socio-economical changes derived from the Cold war impacted american popular music?
-- What are the musical properties and/or genres that were more impacted by these events?
-- What are the most salient musical features with regards to this question?
-- Are there differences between musical genres, where they impacted in different ways?
 
 
 ### Concepts and Data
