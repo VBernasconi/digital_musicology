@@ -12,6 +12,12 @@ We are really interested in this research question because it will permit us to 
 
 Possible outcomes are to see differences in audio features between songs that were in the Billboard Chart during the Cold War and the ones that were in it after, but also to see correlations between audio features of songs and socio-economical indicators.
 
+- How major socio-economical changes derived from the Cold war impacted american popular music?
+- What are the musical properties and/or genres that were more impacted by these events?
+- What are the most salient musical features with regards to this question?
+- Are there differences between musical genres, where they impacted in different ways?
+
+
 ### Concepts and Data
 In concrete terms, the project seeks to study how music in the United States is impacted by social, economic and historical phenomena (referred hereafter as event). To achieve this, we will use the [Billboard Top 100](https://www.billboard.com/charts/hot-100), which each week ranks the 100 most popular music in the United States. We will cross these musics with the [Spotify metadata database](https://developer.spotify.com/), accessible through an API. This database allows you to directly retrieve musical metadata. The available metadata are the following :
 * Fundamental music properties (key, modality (minor/major), meter)
