@@ -35,7 +35,7 @@ Because of the important variety of genres that appeared throughout the studied 
 * **R&B**: [urban contemporary]
 * **Metal**: [ hard rock, psychedelic rock, grunge]
 * **Blues**: [british blues]
-* **Jazz**: [jazz funk, vocal jazz]
+* **Jazz**: [jazz funk, vocal jazz, classic jazz]
 * **Folk**
 
 ### Concepts
