@@ -7,7 +7,7 @@
 The Cold War period, whose studied years for this project are from 1958 to 1993, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-econo-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with corresponding important events. In order to conduct the research, we worked with the Billboard Charts that weekly provides the top 100 listened musics in the United States.
 
 ### Research Question and Hypothesis
-Hence, we developed two majors hypothesis that will have to be validated or invalidated throughout the conduct of the project:
+Regarding our main research question, which is to understand the evolution of music from 1955 to 1990 and how it might have been impacted by contemporary events, we developed two major hypothesis that will have to be validated or invalidated throughout the conduct of the project:
 1. Based on the following 6 selected features, we expect to see significant variations in a selected range of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
@@ -16,7 +16,7 @@ Hence, we developed two majors hypothesis that will have to be validated or inva
     * **tempo**: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context of their productions
     * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
 The two major hypothesis regarding these features are that music will tend to be shorter and tempo faster (according to literature, an increase up to 120 to 125 beats per minute)
-2. According to the increasing diversity of genres, we assume that the difference in-between similar genres, such as all the pop variety, is minimal.
+2. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
 
 
 ### Concepts
