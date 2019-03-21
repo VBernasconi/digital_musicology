@@ -8,7 +8,7 @@ The Cold War period, whose studied years for this project are from 1958 to 1995,
 
 ### Research Question and Hypothesis
 Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed two main hypothesis that will have to be validated or invalidated throughout the conduct of the project:
-1. Based on the following 6 selected features, we expect to see significant variations in a selected range of major genres:
+1. Based on the 6 following selected features, we expect to see significant variations in a set of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
     * **duration_ms**: our hypothesis is that the duration of musics tend to be shorter, regarding the growing stressful context.
