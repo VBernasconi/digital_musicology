@@ -26,9 +26,9 @@ Based on song titles and artist names from this first dataset, a query is made t
 Then, the identifier obtained for each track allows access to the track features contained in the database (danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, duration_ms, time_signature). After that, the track audio features (tempo, mode) are also collected in a third query. Finally, a fourth query gather the musical genre of the artist of the song.
 
 #### Preprocessing
-Data from multiple queries were merged into a single dataset.Subsequently, the billboard data was aggregated with the API data to obtain a working dataset containing: the titles of the two databases (Billboard and Spotify), the artist name of the two databases (Billboard and Spotify), the identifier in the Spotify database, the tracks features and audio features, a vector of the dates of each week when the track was present in the billboard chart, and a vector including the successive ranks in the billboard chart. Finally, the highest rank in the ranking is also recovered and stored. The column containing the number of weeks spent on the chart, which was of poor quality, as indicated above, was also completely recalculated and then saved. For reasons of data density and quality, data prior to the week of 8 August 1958 are not retained. This data is stored in json format, which unlike csv is able to deal the vector type.
+Data from multiple queries were merged into a single dataset.Subsequently, the billboard data was aggregated with the API data to obtain a working dataset containing: the titles of the two databases (Billboard and Spotify), the artist name of the two databases (Billboard and Spotify), the identifier in the Spotify database, the tracks features and audio features, a vector of the dates of each week when the track was present in the billboard chart, and a vector including the successive ranks in the billboard chart. Finally, the highest rank in the ranking is also recovered and stored. The column containing the number of weeks spent on the chart, which was of poor quality, as indicated above, was removed. For reasons of data density and quality, data prior to the week of 8 August 1958 are not retained. This data is stored in json format, which unlike csv is able to deal the vector type.
 
-The data have two biases. The first is the fact that "only" 78% of them could be retrieved from the Spotify database. However, this seems relatively acceptable bias, all the more so if we adopt the standpoint that the music that are still available today and that have been digitized are the most representative of their period. The second bias is related to the margin of error of Echonest algorithms when determining features.
+The data have two biases. The first is the fact that "only" 78% of them could be retrieved from the Spotify database. However, this seems relatively acceptable bias, all the more so if we adopt the standpoint that the music that are still available today and that have been digitized are the most representative of their period. Moreover, in the corpus finally selected, this percentage reach 91%. The second bias is related to the margin of error of Echonest algorithms when determining features.
 
 #### Corpus selection
 For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War in order to see if changes in political situation may have influenced the music creation.
@@ -47,6 +47,30 @@ Because of the important variety of genres that appeared throughout the studied 
 * **Blues**: [british blues]
 * **Jazz**: [jazz funk, vocal jazz, classic jazz]
 * **Folk**
+
+#### Description of the corpus
+Finally, the corpus contains a total of 19,098 pieces of music representing 177,700 Billboard entries out of the 195,100 published over this period, i.e. 91%.
+
+
+<img src="images/weeks_on_chart.png" alt="drawing" width="450"/>
+
+As we can see, most features are staying less that 20 weeks on chart, with a maximum at 42.
+
+
+<img src="images/features_description.png" alt="drawing" width="450"/>
+
+Hereover, a table containing the continuous features' statistics.
+
+
+<img src="images/songs_per_key.png" alt="drawing" width="450"/>
+
+
+Finally, a plot displaying the distribution of the songs per key. Concerning the modality, 58% of the entries are classified as major, 18% as minor and 24% are not classified. For the time signature, 70% of the data are 4/4, 6% are 3/4, 0.6% are considered other (5:4 or 1:4) and 23.4% are not classified.
+
+
+<img src="images/entries_per_year.png" alt="drawing" width="450"/>
+
+In this last plot, one can observe the first occurence of the songs per year. As the years go by, the number of unique songs entering in the top 100 diminishes. The lower value for 1958 is due to the fact that our corpus begins the week of August 8.
 
 ### Concepts
 To address the research hypotheses, we started by selecting the variables. When the algorithm to calculate a certain variable was unknown and the definition of this variable was not commonly accepted by the majority of the scientific community, we decided not to keep it for our research. Therefore, we decided to retain only six physical variables : the duration, the time signature, the tempo, the mode, the key, and the loudness, as well as two perceptual variables (i.e. issued from psychological inquiry and then extended with a machine learning algorithm) : the energy and the valence.
