@@ -3,15 +3,21 @@
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
-### Research Hypothesis
-Underlying research questions we will try to answer through the project:
-* How major socio-economical changes derived from the Cold War impacted american popular music from the Billboard chart ?
-* What are the musical features and/or genres that were more impacted by these events?
-* Were the various genres impacted in different ways?
+### Introduction
+The Cold War period, whose studied years for this project are from 1955 to 1990, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-econo-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with corresponding important events. In order to conduct the research, we worked with the Billboard Charts that weekly provides the top 100 listened musics in the United States.
 
-We decided to study the impact of the Cold War on the Billboard Chart songs with the help of the metadata and audio features given by Spotify. We chose the Cold War as historical background for this analysis as it was a key period of American history, and it had a huge effect on the society and the economy. In order to perform this analysis, we will look at socio-economical indicators such as GDP, minimum wages or even mass shootings in connection with the songs of the Billboard chart.
+### Research Question and Hypothesis
+Hence, we developed two majors hypothesis that will have to be validated or invalidated throughout the conduct of the project:
+1. Based on the following 6 selected features, we expect to see significant variations in a selected range of major genres:
+* * key: no specific hypothesis was determined regarding this feature.
+* * loudness: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
+* * duration_ms: our hypothesis is that the duration of musics tend to be shorter, regarding the growing stressful context.
+* * time_signature: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arrise, however there should be an important convergence to a 4:4 time signature (regarding the fact that there are no valses).
+* * tempo: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context of their productions
+* * mode: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
+The two major hypothesis regarding these features are that music will tend to be shorter and tempo faster (according to literature, an increase up to 120 to 125 beats per minute)
+2. According to the increasing diversity of genres, we assume that the difference in-between similar genres, such as all the pop variety, is minimal.
 
-We are really interested in these research questions as it will allow us to discover a new way to apprehend music and also to see which impact history can have on music. For the moment, we don't have particular expectations regarding the possible outcomes of this research, as the aim is precisely to identify the salient musical and audio features that are the most related to the context.
 
 ### Concepts and Data
 In concrete terms, the project seeks to study how music in the United States is impacted by social, economic and historical phenomena (referred hereafter as event). To achieve this, we will use the [Billboard Top 100](https://www.billboard.com/charts/hot-100), which each week ranks the 100 most popular music in the United States. We will cross these musics with the [Spotify metadata database](https://developer.spotify.com/), accessible through an API. This database allows you to directly retrieve musical metadata. The available metadata are the following :
