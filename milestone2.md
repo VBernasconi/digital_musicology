@@ -18,12 +18,29 @@ Regarding our main research question, which is to understand the evolution of mu
 The two major hypothesis regarding these features are that music will tend to be shorter and tempo faster (according to literature, an increase up to 120 to 125 beats per minute)
 2. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
 
+### Data description
+
+### Datasets
+The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1953 and 2017. For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War in order to see if changes in political situation may have influenced the music creation. 
+
+#### Genre selection
+Because of the important variety of genres that appeared throughout the studied period from 1955 to 1990, we decided to group them under the following more general categories:
+* **Pop**: the Pop genre groups all its derivative, such as New wave pop, Brill building pop, Bubblegum pop, adult standards....
+* **Rock**: [soft rock, album rock, folk rock, classic rock, rock and roll]
+* **Country**: Country music and its derivative, such as country rock
+* **Reggae**
+* **Disco**: [disco, post-disco, funk]
+ * **Electro**
+* **Soul**: [classic soul, southern soul, quiet storm]
+* **R&B**: [urban contemporary]
+* **Metal**: [ hard rock, psychedelic rock, grunge]
+* **Blues**: [british blues]
+* **Jazz**: [jazz funk, vocal jazz]
+* **Folk**
 
 ### Concepts
 To address the research hypotheses, we started by selecting the variables. When the algorithm to calculate a certain variable was unknown and the definition of this variable was not commonly accepted by the majority of the scientific community, we decided not to keep it for our research. Therefore, we decided to retain only six physical variables : the duration, the time signature, the tempo, the mode, the key, and the loudness, as well as two perceptual variables (i.e. issued from psychological inquiry and then extended with a machine learning algorithm) : the energy and the valence.
 
-### Data
-The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1953 and 2017. For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War in order to see if changes in political situation may have influenced the music creation. 
 
 ### Methods
 We seek to highlight differences in Billboard chart top songs' audio features during and after the Cold War. To do so, we plan to use mathematical indicators to identify the metadata that are most strongly correlated with event indicators. We also plan to establish a regression between metadata and event indicator. Categorical data will be processed by dummy variable encoding. To determine which events have the greatest impact on the evolution of music and also which musical variables are the most impacted, we will use the Principal Component Analysis method.
