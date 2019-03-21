@@ -9,26 +9,21 @@ The Cold War period, whose studied years for this project are from 1955 to 1990,
 ### Research Question and Hypothesis
 Hence, we developed two majors hypothesis that will have to be validated or invalidated throughout the conduct of the project:
 1. Based on the following 6 selected features, we expect to see significant variations in a selected range of major genres:
-    * key: no specific hypothesis was determined regarding this feature.
-    * loudness: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
-    * duration_ms: our hypothesis is that the duration of musics tend to be shorter, regarding the growing stressful context.
-    * time_signature: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arrise, however there should be an important convergence to a 4:4 time signature (regarding the fact that there are no valses).
-    * tempo: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context of their productions
-    * mode: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
+* * key: no specific hypothesis was determined regarding this feature.
+* * loudness: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
+* * duration_ms: our hypothesis is that the duration of musics tend to be shorter, regarding the growing stressful context.
+* * time_signature: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arrise, however there should be an important convergence to a 4:4 time signature (regarding the fact that there are no valses).
+* * tempo: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context of their productions
+* * mode: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
 The two major hypothesis regarding these features are that music will tend to be shorter and tempo faster (according to literature, an increase up to 120 to 125 beats per minute)
 2. According to the increasing diversity of genres, we assume that the difference in-between similar genres, such as all the pop variety, is minimal.
 
 
-### Concepts and Data
-In concrete terms, the project seeks to study how music in the United States is impacted by social, economic and historical phenomena (referred hereafter as event). To achieve this, we will use the [Billboard Top 100](https://www.billboard.com/charts/hot-100), which each week ranks the 100 most popular music in the United States. We will cross these musics with the [Spotify metadata database](https://developer.spotify.com/), accessible through an API. This database allows you to directly retrieve musical metadata. The available metadata are the following :
-* Fundamental music properties (key, modality (minor/major), meter, beats intervals, pitches, list of timbres)
-* Audio properties (loudness, speechiness, instrumentalness)
-* Mood indicators (tempo, valence, energy, danceability)
-* Context (liveness, acousticness)
-* Categorical (genre, artist)
-* Other (duration, title)
+### Concepts
+To address the research hypotheses, we started by selecting the variables. When the algorithm to calculate a certain variable was unknown and the definition of this variable was not commonly accepted by the majority of the scientific community, we decided not to keep it for our research. Therefore, we decided to retain only six physical variables : the duration, the time signature, the tempo, the mode, the key, and the loudness, as well as two perceptual variables (i.e. issued from psychological inquiry and then extended with a machine learning algorithm) : the energy and the valence.
 
-The operationalization of indicators such as danceability was performed by [Echonest](http://the.echonest.com/) on behalf of Spotify and is described in the [API references](https://developer.spotify.com/documentation/web-api/reference/). The impact will be measured through a correlation with other event indicators. Data on these indicators are available on the [Kaggle platform](https://www.kaggle.com/datasets) and on the [US government database](https://www.data.gov/).
+### Data
+The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between 1953 and 2017. For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1993 have been kept in the corpus. 
 
 ### Methods
 We seek to highlight differences in Billboard chart top songs' audio features during and after the Cold War. To do so, we plan to use mathematical indicators to identify the metadata that are most strongly correlated with event indicators. We also plan to establish a regression between metadata and event indicator. Categorical data will be processed by dummy variable encoding. To determine which events have the greatest impact on the evolution of music and also which musical variables are the most impacted, we will use the Principal Component Analysis method.
