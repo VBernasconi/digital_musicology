@@ -3,7 +3,7 @@
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
-
+### Introduction
 The Cold War period, whose studied years for this project are from 1958 to 1993, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-econo-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with corresponding important events. In order to conduct the research, we worked with the Billboard Charts that weekly provides the top 100 listened musics in the United States.
 
 ### Research Question and Hypothesis
