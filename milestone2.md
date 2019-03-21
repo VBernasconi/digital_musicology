@@ -3,7 +3,7 @@
 
 ### Dataset: [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/)
 
-### Research Questions
+### Research Hypothesis
 Underlying research questions we will try to answer through the project:
 * How major socio-economical changes derived from the Cold War impacted american popular music from the Billboard chart ?
 * What are the musical features and/or genres that were more impacted by these events?
