@@ -20,7 +20,7 @@ The two major hypothesis regarding these features are that music will tend to be
 
 ### Data description
 
-### Datasets
+#### Datasets
 The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1953 and 2017. For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War in order to see if changes in political situation may have influenced the music creation. 
 
 #### Genre selection
