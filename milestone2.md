@@ -25,13 +25,13 @@ The research is based on two datasets. The first dataset is composed of the Bill
 
 #### Genre selection
 Because of the important variety of genres that appeared throughout the studied period from 1955 to 1990, we decided to group them under the following more general categories:
-* **Pop**: the Pop genre groups all its derivative, such as New wave pop, Brill building pop, Bubblegum pop, adult standards....
+* **Pop**: [New wave pop, Brill building pop, Bubblegum pop, adult standards, ....]
 * **Rock**: [soft rock, album rock, folk rock, classic rock, rock and roll]
-* **Country**: Country music and its derivative, such as country rock
+* **Country**: [country rock, country, country gospel]
 * **Reggae**
 * **Disco**: [disco, post-disco, funk]
  * **Electro**
-* **Soul**: [classic soul, southern soul, quiet storm]
+* **Soul**: [classic soul, southern soul, quiet storm, northern soul, chicago soul]
 * **R&B**: [urban contemporary]
 * **Metal**: [ hard rock, psychedelic rock, grunge]
 * **Blues**: [british blues]
