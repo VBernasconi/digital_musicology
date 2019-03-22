@@ -87,7 +87,7 @@ In total, there are 987 different music genres and 4961 songs do not have a give
 
 <img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-As described above, due to the important amount of different genres, we will try to group them into more global categories when possible. It is also important to understand these main genres, such as 'adult standards' that is a not a genre but a category grouping musics that might be more attractive to an older audience (50 years old and above). Thus, one can consider that the genres of music the category contains might greatly evolve in time. Decision will have to be made whether or not such categories will be taken into account when working on music genres.
+As described above, due to the important amount of different genres, we will try to group them into more global categories when possible. It is also important to understand these main genres, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musics that might be more attractive to an older audience (50 years old and above). It thus might be possible that the musical genres the category contains have evolve over time. Same applies with the '**christmas**' category, which might group songs with various musical genres. Hence, decisions will have to be made regarding these categories and whether or not such they will be taken into account when working on music genres.
 
 
 ### Methods
