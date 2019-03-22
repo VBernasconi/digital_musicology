@@ -84,7 +84,7 @@ Regarding the different music genres proposed by the database, we can see the im
 
 In total, there are 987 different music genres and 4961 songs do not have a given genre (either empty or nan value). Following are the an exerpt of the first mostly assigned genres.
 
-<img src="images/music_genre_tot.png" alt="drawing" width="450"/>
+<img src="images/music_genre_tot.png" alt="drawing" width="200"/>
 
 As described above, due to the important amount of different genres, it will be tried to group them into more global categories when possible. It is also important to understand these main genres, such as 'adult standards' that is a not a genre but a category grouping musics that might be more attractive to an older audience (50 years old and above). Thus, one can consider that the genres of music the category contains might greatly evolve in time. Decision will have to be made whether or not such categories will be taken into account when working on music genres.
 
