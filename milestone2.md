@@ -79,6 +79,9 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only lously correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the important correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
+Regarding the different music genres proposed by the database, we can see the important increase of their numbers throughout the studied period.
+
+
 ### Methods
 We seek to highlight differences in Billboard chart top songs' audio features during and after the Cold War. To do so, we plan to use mathematical indicators to identify the metadata that are most strongly correlated with event indicators. We also plan to establish a regression between metadata and event indicator. Categorical data will be processed by dummy variable encoding. To determine which events have the greatest impact on the evolution of music and also which musical variables are the most impacted, we will use the Principal Component Analysis method.
 
