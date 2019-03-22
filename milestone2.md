@@ -80,13 +80,14 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only lously correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the important correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
 Regarding the different music genres proposed by the database, we can see the important increase of their numbers throughout the studied period :
+
 <img src="images/music_genre_yearly.png" alt="drawing" width="450"/>
 
 In total, there are 987 different music genres and 4961 songs do not have a given genre (either empty or nan value). Following are the an exerpt of the first mostly assigned genres.
 
-<img src="images/music_genre_tot.png" alt="drawing" width="200"/>
+<img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-As described above, due to the important amount of different genres, it will be tried to group them into more global categories when possible. It is also important to understand these main genres, such as 'adult standards' that is a not a genre but a category grouping musics that might be more attractive to an older audience (50 years old and above). Thus, one can consider that the genres of music the category contains might greatly evolve in time. Decision will have to be made whether or not such categories will be taken into account when working on music genres.
+As described above, due to the important amount of different genres, we will try to group them into more global categories when possible. It is also important to understand these main genres, such as 'adult standards' that is a not a genre but a category grouping musics that might be more attractive to an older audience (50 years old and above). Thus, one can consider that the genres of music the category contains might greatly evolve in time. Decision will have to be made whether or not such categories will be taken into account when working on music genres.
 
 
 ### Methods
