@@ -5,16 +5,21 @@
 The Cold War period, whose studied years for this project are from 1958 to 1995, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-econo-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with corresponding important events. In order to conduct the research, we worked with the Billboard Charts that weekly provides the top 100 listened musics in the United States.
 
 ### Research Question and Hypothesis
-Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed two main hypothesis that will have to be validated or invalidated throughout the conduct of the project:
+Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be validated or invalidated throughout the conduct of the project:
 1. Based on the 6 following selected features, we expect to see significant variations in a set of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to have an increase of loudness in rock-related genres musics.
     * **duration_ms**: our hypothesis is that the duration of musics tend to be shorter, regarding the growing stressful context.
-    * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arrise, however there should be an important convergence to a 4:4 time signature (regarding the fact that there are no valses).
+    * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arrise, however there should be an important convergence to a 4:4 time signature.
     * **tempo**: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context of their productions
     * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
-The two major hypothesis regarding these features are that music will tend to be shorter and tempo faster (according to literature, an increase up to 120 to 125 beats per minute)
-2. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
+The two major hypothesis regarding these features are that music will tend to be shorter, and tempo faster (according to literature, an increase up to 120-125 beats per minute).
+2. In general, we also expect to see divergent developments between the different genres. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
+
+The second part of the main research question is about how can the changes observed in the different musical genres be linked to the historical context. What is the plausibility of these relationships? Which human groups are most affected by these events and which genres are related to them?
+
+3. With regard to this aspect of the question, we seek to observe significant changes related to the afro-american civil rights movement, which could be expressed e.g. in the soul genre. We also expect significant historico-musical events related to the counterculture movement, such as Woodstock Musical Festival in 1969, to impact music at a long-term, especially rock and folk.
+
 
 ### Data description
 
@@ -91,7 +96,8 @@ Bellow is a primary grouping convention into more general categories:
 
 
 ### Methods
-We seek to highlight differences in Billboard chart top songs' audio features during and after the Cold War. To do so, we plan to use mathematical indicators to identify the metadata that are most strongly correlated with event indicators. We also plan to establish a regression between metadata and event indicator. Categorical data will be processed by dummy variable encoding. To determine which events have the greatest impact on the evolution of music and also which musical variables are the most impacted, we will use the Principal Component Analysis method.
+The first part of the methodology will be based on a visual graphical approach, aimed at establishing observations related to the different genres. The method will work on a weekly granularity and identification of statistically significant changes relative to a 95% confidence interval. The calculation of partial temporal derivatives, carried out over periods of variable granularity, will allow one to observe trends, of varying degrees of slowness depending on the granularity. In order to gain insights on the relative changes from one genre to another, and to better visualize the specific drift of each genre, a degree two Principal Component Analysis will be used.
+
 
 ### Literature
 - Karen A. Cerula, "Social Disruption and Its Effects on Music: An Empirical Analysis", _Social Forces_, Vol. 62, Issue 4, June 1984, pp. 885-904, [Accessed on: <a href= https://doi.org/10.1093/sf/62.4.885> https://doi.org/10.1093/sf/62.4.885</a>]
