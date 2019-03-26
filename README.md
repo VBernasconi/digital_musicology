@@ -1,6 +1,6 @@
 ### Digital Musicology - Spring semester 2019
 
-# Understanding the impact of the Cold War on Billboard Charts:  _When the american society reflects on music creation_
+# Understanding the impact of the Cold War on Billboard Charts:  _When the American society reflects on music creation_
 
 ### Group members
 - Marion Kramer: marion.kramer@epfl.ch
