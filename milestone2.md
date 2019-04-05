@@ -5,7 +5,7 @@
 The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitting historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musics in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
 
 ### Research Question and Hypothesis
-Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be validated or invalidated throughout the conduct of the project:
+Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
 1. Based on the 6 following selected features, we expect to see significant variations in a set of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to see an increase of loudness in rock-related genres musics.
