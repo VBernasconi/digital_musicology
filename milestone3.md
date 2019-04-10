@@ -80,7 +80,7 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 #### 1. Features evolution
 To observe the evolution of the different features over time, annual granularity is preferred. Indeed, this granularity allows to observe trends clearly and limit noise. The 95% confidence interval is also represented so that trends can be visually identified. Categorical variables are represented according to their share in the total number of observations. 
 
-In a second step, the salient observations are mathematically identified and extracted. To detect salient observations, the annual evolution of each feature is smoothed by convolution with a 5-year uniform smoothing filter. A replication padding is carried out to avoid shrinking. Then, the 95% interval of this representation of this smoothed annual evolution is calculated. The lower and upper bounds of this range contain non-salient observations of the distribution, while observations outside are considered salient. This procedure thus allow to highlight significant drifts beyond the medium-term evolution of the music, the latter being already visible in the other graphs. The salient observations of the different features are finally gathered in a single list so that they can represent and observe the concomitant drifts.
+In a second step, the salient observations are mathematically identified and extracted. To detect salient observations, the annual evolution of each feature is smoothed by convolution with a 5-year uniform smoothing filter. A replication padding is carried out to avoid shrinking. Then, the 95% interval of this representation of this smoothed annual evolution is calculated. The lower and upper bounds of this range contain non-salient observations of the distribution, while observations outside are considered salient. This procedure allows to highlight significant drifts beyond the medium-term evolution of the music, the latter being already visible in the other graphs. To also include the variations of the categorical variables, the latter are represented as integers. Finally, the salient observations of the different features are gathered in a single list so that they can represent and observe the concomitant drifts. 
 
 #### 2. Musical genres
 Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
@@ -99,15 +99,11 @@ Due to the large amount of different genres, we decided to group them into more 
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 
 ##### 1.2 Drifts
-<img src="images/drifts/root.png" alt="drawing" width="600"/>
-<img src="images/drifts/time_signature.png" alt="drawing" width="600"/>
-<img src="images/drifts/mode.png" alt="drawing" width="600"/>
-<img src="images/drifts/loudness.png" alt="drawing" width="600"/>
-<img src="images/drifts/duration.png" alt="drawing" width="600"/>
-<img src="images/drifts/tempo.png" alt="drawing" width="600"/>
-<img src="images/drifts/energy.png" alt="drawing" width="600"/>
-<img src="images/drifts/valence.png" alt="drawing" width="600"/>
+<img src="images/drifts/valence.png" alt="drawing" width="900"/>
+Example of the identification of salient drifts with regard to the general trend over 5 years. This type of graph was created for each of the eight features. The red dots represent a salient drift exceeding the upper bound of the annual average smoothed over 5 years (at a 95% confidence interval), while the blue dots represent a salient drift exceeding the lower bound of this medium-term trend.
+
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
+This graph represents the sum of the drifts, month by month, for each of the eight features. Denser regions represent periods when many drifts have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time.
 
 #### 2. Musical genres
 The distribution of genres was plotted using a heatmap :
