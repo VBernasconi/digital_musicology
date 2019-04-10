@@ -136,6 +136,21 @@ In a general way this first set of results shows the great emergence of differen
 ## Conclusion (interpretation en lien avec questions de recherche)
 
 ## Discussion (critique de la conclusion)
+### Arising Difficulties
+
+Did you encounter any difficulties? Which kind? Are they related to the data, the methods you chose, or your specific questions?
+
+How are you going to deal with them? Propose clear and feasible solutions!
+
+### Interesting Problems
+
+Did you find something unexpected?
+
+Did you encounter problems that can’t be solved given the limits of your project?
+
+### Next steps towards the final analysis
+
+
 
 
 
