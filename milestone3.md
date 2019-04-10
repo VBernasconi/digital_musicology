@@ -80,21 +80,21 @@ Due to the large amount of different genres, we decided to group them into more 
 
 The distribution of genres was then plotted using a heatmap :
 
-<img src="images/genre_distribution.png" alt="drawing" width="900"/>
+<img src="images/genre_distribution.png" alt="drawing" width="1000"/>
 
 Because of the dominance of the 'other' category, which makes hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap:
 
-<img src="images/genre_distribution_nother.png" alt="drawing" width="900"/>
+<img src="images/genre_distribution_nother.png" alt="drawing" width="1000"/>
 
 As we can see on these two heatmaps, there is a prevalence of rock musics between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
 
-<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="900"/>
+<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="1000"/>
 
 On the above, we can clearly see that hip hop seems to have reached its pick of use for the studied time range in the early 90s, similarly to caribbean and caribbean-influenced songs. Other music genres benefit from a more linear distribution over time.
 
 A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year. With the latter, we can clearly see the dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music was dominent.
 
-<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="900"/>
+<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="1000"/>
 
 ### Exploratory analysis
 #### Features evolution
