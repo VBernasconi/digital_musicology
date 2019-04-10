@@ -109,7 +109,7 @@ The distribution of genres was plotted using a heatmap :
 
 <img src="images/genre_distribution.png" alt="drawing" width="2000"/>
 
-Because of the dominance of the 'other' category, which makes hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap:
+Because of the dominance of the 'other' category, which makes it hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap. Indeed, the 'other' category encompass non-musical genre classifications, such as '**adult standards**', '**christmas**' or '**mellow gold**', as well as all **_None_** attributed titles. The removal of 'other' should hence not affect the results but provides more visibility.
 
 <img src="images/genre_distribution_nother.png" alt="drawing" width="2000"/>
 
