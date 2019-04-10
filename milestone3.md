@@ -1,10 +1,10 @@
 ### Digital Musicology
 # Understanding the impact of the Cold War on Billboard Charts:  _When the American society reflects on music creation_
 
-### Introduction
+## Introduction
 The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled a large increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitant historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
 
-### Research Question and Hypothesis
+## Research Question and Hypothesis
 
 Our main research question is to understand the evolution of music from 1958 to 1995 and how this evolution have been impacted by contemporary events. As the music is composed of different musical genres, a second part of the question research is about how can the change observed in these genres be linked to the historical context. What is the plausibility of theses relationships ? Which humans groups are the most affected by theses events and which genres are related to them ? 
 Regarding our main research question, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
@@ -21,27 +21,27 @@ Regarding our main research question, we developed three main hypothesis that wi
     * **tempo**: our major hypothesis regarding this aspect is that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society (according to literature, an increase up to 120-125 beats per minute).
     * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical pieces.
 
-### Dataset
+## Dataset
 
-#### Data gathering and description of the dataset
+### Data gathering and description of the dataset
 The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1955 and 2017, found on the online platform [Kaggle](https://www.kaggle.com/), in csv format. This table contains 300'600 rows and eight columns, containing respectively the date of the week, the rank, the song title, the artist name, the number of weeks on charts, the musical piece's year of release, the track's popularity on Spotify and the artist popularity on Spotify. The rows between 1955 and 1958 are duplicated and low-quality data. By a brief visual evaluation of the data, it can be seen that the data concerning the Spotify database are mostly missing. The number of weeks on charts is also often false or missing.
 
 Based on song titles and artist names from this first dataset, a query is made to the [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/) in order to retrieve the corresponding entry in the Spotify database. This requires registering with Spotify as a developer and obtaining a token to access the database. The API returns json-formatted answers. The completion of the dataset is then done in several steps. The first step is to find the corresponding identifier of each track in the Spotify database, based on the artist's name and the song title. During this first run, 69% of matches were found. In a second step, this rate is increased to 78% by isolating the main artist's name and the main tokens of the title and thus submitting a simplified request to the API.
 
 Then, the identifier obtained for each track allows access to the track features contained in the database (danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, duration_ms, time_signature). After that, the track audio features (tempo, mode) are also collected in a third query. Finally, a fourth query gathers the musical genre of the artists.
 
-#### Preprocessing
+### Preprocessing
 Data from multiple queries were merged into a single dataset. Subsequently, the billboard data was aggregated with the API data to obtain a usable dataset containing: the titles of the two databases (Billboard and Spotify), the artist name of the two databases (Billboard and Spotify), the identifier in the Spotify database, the tracks features, the audio features, a vector of the dates of each week when the track was present in the billboard chart, and a vector including the successive ranks in the billboard chart. Finally, the highest rank in the ranking is also recovered and stored. The column containing the number of weeks spent on the chart, which was of poor quality, as indicated above, was removed. It can moreover be retrieved easily for the weeks list. For reasons of data density and quality, data prior to the week of 8 August 1958 are not retained. This final preprocessed dataset is stored in json format, which unlike csv is able to deal the vector type.
 
 The data have two biases. The first is the fact that "only" 78% of them could be retrieved from the Spotify database. However, this seems relatively acceptable bias, all the more so if we adopt the standpoint that the musical pieces that are still available today and that have been digitized are the most representative of their period. Moreover, in the timeframe finally selected, this percentage reaches 91%. The second bias is related to the margin of error of Echonest algorithms when determining features.
 
-#### Corpus selection
+### Corpus selection
 For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War (until 1995) in order to see if post-Cold War changes in the political context may have influenced the music creation.
 
-#### Features
+### Features
 To address the research hypotheses, we started by selecting the variables. When the algorithm to calculate a certain variable was unknown and the definition of this variable was not commonly accepted by the majority of the scientific community, we decided not to keep it for our research. Therefore, we decided to retain only six physical variables: the duration, the time signature, the tempo, the mode, the key, and the loudness, as well as two perceptual variables (i.e. issued from psychological inquiry and then extended with a machine learning algorithm): the energy and the valence. Energy is described by Spotify as a perceptual measure of intensity and activity, and energetic tracks feel fast, loud, and noisy. Valence is described by Spotify as musical positiveness conveyed by a track. Tracks with high valence will sound more positive, while tracks with low valence will sound more negative.
 
-#### Description of the corpus
+### Description of the corpus
 Finally, the corpus contains a total of 19,098 pieces of music representing 177,700 Billboard entries out of the 195,100 published over this period, i.e. 91%.
 
 
@@ -73,16 +73,17 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 
 <img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-### Initial Analysis
+## Initial Analysis
 
-#### Methodology 
+### Methodology 
 
-##### 2. Musical genres
+#### 2. Musical genres
 Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
 
-#### Results
+### Results
 
-##### 1. Features evolution
+#### 1. Features evolution
+##### 1.1 Global changes
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
@@ -92,8 +93,18 @@ Due to the large amount of different genres, we decided to group them into more 
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 
+##### 1.2 Drifts
+<img src="images/drifts/root.png" alt="drawing" width="600"/>
+<img src="images/drifts/time_signature.png" alt="drawing" width="600"/>
+<img src="images/drifts/mode.png" alt="drawing" width="600"/>
+<img src="images/drifts/loudness.png" alt="drawing" width="600"/>
+<img src="images/drifts/duration.png" alt="drawing" width="600"/>
+<img src="images/drifts/tempo.png" alt="drawing" width="600"/>
+<img src="images/drifts/energy.png" alt="drawing" width="600"/>
+<img src="images/drifts/valence.png" alt="drawing" width="600"/>
+<img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
 
-##### 2. Musical genres
+#### 2. Musical genres
 The distribution of genres was plotted using a heatmap :
 
 <img src="images/genre_distribution.png" alt="drawing" width="2000"/>
@@ -112,9 +123,9 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 <img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
 
-#### Interpretation
+### Interpretation
 
-##### 2. Musical genres
+#### 2. Musical genres
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
 
@@ -122,19 +133,19 @@ The fact that there is a greater proportion of songs listed as 'other', especial
 
 In a general way this first set of results shows the great emergence of different musical styles over the studied period. The fact that we had to group the large amount of genres to more general classes and that this evolution is still perceivable is an interesting proof of that phenomenon. The great majority of top listed titles from which rock music benefits shows not only its popularity, but is also a hint of the diversity of subgenres that occured within this style.
 
-### Conclusion (interpretation en lien avec questions de recherche)
+## Conclusion (interpretation en lien avec questions de recherche)
 
-### Discussion (critique de la conclusion)
+## Discussion (critique de la conclusion)
 
 
 
-### Exploratory analysis
+## Exploratory analysis
 
-### Methods
+## Methods
 The first part of the methodology will be based on a visual graphical approach, aimed at establishing observations related to the different genres. The method will work on a weekly granularity and identification of statistically significant changes relative to a 95% confidence interval. The calculation of partial temporal derivatives, carried out over periods of variable granularity, will allow one to observe trends, of varying degrees of slowness depending on the granularity. In order to gain insights on the relative changes from one genre to another, and to better visualize the specific drift of each genre, a degree two Principal Component Analysis will be used.
 
 
-### Literature
+## Literature
 - Karen A. Cerula, "Social Disruption and Its Effects on Music: An Empirical Analysis", _Social Forces_, Vol. 62, Issue 4, June 1984, pp. 885-904, [Accessed on: <a href= https://doi.org/10.1093/sf/62.4.885> https://doi.org/10.1093/sf/62.4.885</a>]
 - Richard A. Peterson and David G. Berger, "Cycles in Symbol Production: The Case of Popular Music", _American Sociological Review_, Vol. 40, No. 2, April 1975, pp. 158-173,  [Accessed on: <a href= https://www.jstor.org/stable/2094343> https://www.jstor.org/stable/2094343</a>]
 -  Eric Clarke, Nicholas Cook, "Empirical Musicology: Aims, Methods, Prospects", Oxford University Press, 2004
