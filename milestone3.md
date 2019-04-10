@@ -162,14 +162,6 @@ Did you encounter problems that can’t be solved given the limits of your proje
 
 
 
-
-
-## Exploratory analysis
-
-## Methods
-The first part of the methodology will be based on a visual graphical approach, aimed at establishing observations related to the different genres. The method will work on a weekly granularity and identification of statistically significant changes relative to a 95% confidence interval. The calculation of partial temporal derivatives, carried out over periods of variable granularity, will allow one to observe trends, of varying degrees of slowness depending on the granularity. In order to gain insights on the relative changes from one genre to another, and to better visualize the specific drift of each genre, a degree two Principal Component Analysis will be used.
-
-
 ## Literature
 - Karen A. Cerula, "Social Disruption and Its Effects on Music: An Empirical Analysis", _Social Forces_, Vol. 62, Issue 4, June 1984, pp. 885-904, [Accessed on: <a href= https://doi.org/10.1093/sf/62.4.885> https://doi.org/10.1093/sf/62.4.885</a>]
 - Richard A. Peterson and David G. Berger, "Cycles in Symbol Production: The Case of Popular Music", _American Sociological Review_, Vol. 40, No. 2, April 1975, pp. 158-173,  [Accessed on: <a href= https://www.jstor.org/stable/2094343> https://www.jstor.org/stable/2094343</a>]
