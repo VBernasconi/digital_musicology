@@ -69,9 +69,16 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
+In total, there are 987 different musical genres and 4961 songs do not have a given genre (either empty or nan value). Following is an excerpt of the first mostly assigned genres names.
+
+<img src="images/music_genre_tot.png" alt="drawing" width="180"/>
+
 ### Initial Analysis
 
 #### Methodology 
+
+##### 2. Musical genres
+Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
 
 #### Results (factuel)
 
@@ -87,15 +94,7 @@ One can observe that the physical variables (mode, time_signature, tempo, loudne
 
 
 ##### 2. Musical genres
-Regarding the different music genres proposed by the database, there is an increase of their numbers throughout the studied period, as we saw in the first evaluation of the dataset. 
-
-In total, there are 987 different musical genres and 4961 songs do not have a given genre (either empty or nan value). Following is an excerpt of the first mostly assigned genres names.
-
-<img src="images/music_genre_tot.png" alt="drawing" width="180"/>
-
-Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
-
-The distribution of genres was then plotted using a heatmap :
+The distribution of genres was plotted using a heatmap :
 
 <img src="images/genre_distribution.png" alt="drawing" width="2000"/>
 
@@ -109,11 +108,15 @@ As we can see on these two heatmaps, there is a prevalence of rock musics betwee
 
 On the above, we can clearly see that hip hop seems to have reached its pick of use for the studied time range in the early 90s, similarly to caribbean and caribbean-influenced songs. Other music genres benefit from a more linear distribution over time.
 
-A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year. With the latter, we can clearly see the dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music was dominent.
+A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year.
 
 <img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
 
 #### Interpretation
+
+##### 2. Musical genres
+
+With the last heatmap, we can clearly see the dominance of rock music from the mid-60s to the early 90s on the musical scene. Before the rise of rock music, country music seems to have been more dominent.
 
 ### Conclusion (interpretation en lien avec questions de recherche)
 
