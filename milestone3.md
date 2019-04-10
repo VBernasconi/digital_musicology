@@ -63,7 +63,7 @@ Finally, a plot displaying the distribution of the songs per key. One can observ
 
 <img src="images/entries_per_year.png" alt="drawing" width="450"/>
 
-In this plot, one can observe the first occurence of the songs per year. As the years go by, the number of unique songs entering in the top 100 diminishes. The lower value for 1958 is due to the fact that our corpus begins the week of August 8.
+In this plot, one can observe the first occurence of the songs per year. As the years go by, the number of unique songs entering in the top 100 diminishes. As our corpus begins the week of August 8, the year 1958 was not representative as it gives only information for 5 months and then was not plotted.
 
 <img src="images/corr_features.png" alt="drawing" width="450"/>
 
