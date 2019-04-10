@@ -58,7 +58,7 @@ Hereover, a table containing the continuous features' statistics.
 <img src="images/songs_per_key.png" alt="drawing" width="450"/>
 
 
-Finally, a plot displaying the distribution of the songs per key. Concerning the modality, 58% of the entries are classified as major, 18% as minor and 24% are not classified. For the time signature, 70% of the data are 4/4, 6% are 3/4, 0.6% are considered other (5:4 or 1:4) and 23.4% are not classified.
+Finally, a plot displaying the distribution of the songs per key. One can observe that C is the most used root, followed by G, which is consistent with what we have seen in lectures. The diatonic scale is more used with the exception of B, which is a little less used that C#. Concerning the modality, 58% of the entries are classified as major, 18% as minor and 24% are not classified. For the time signature, 70% of the data are 4/4, 6% are 3/4, 0.6% are considered other (5:4 or 1:4) and 23.4% are not classified.
 
 
 <img src="images/entries_per_year.png" alt="drawing" width="450"/>
