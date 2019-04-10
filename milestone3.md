@@ -80,22 +80,32 @@ Due to the large amount of different genres, we decided to group them into more 
 
 The distribution of genres was then plotted using a heatmap :
 
-<img src="images/genre_distribution.png" alt="drawing" width="450"/>
+<img src="images/genre_distribution.png" alt="drawing" width="900"/>
 
 Because of the dominance of the 'other' category, which makes hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap:
 
-<img src="images/genre_distribution_nother.png" alt="drawing" width="450"/>
+<img src="images/genre_distribution_nother.png" alt="drawing" width="900"/>
 
 As we can see on these two heatmaps, there is a prevalence of rock musics between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
 
-<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="450"/>
+<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="900"/>
 
 On the above, we can clearly see that hip hop seems to have reached its pick of use for the studied time range in the early 90s, similarly to caribbean and caribbean-influenced songs. Other music genres benefit from a more linear distribution over time.
 
 A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year. With the latter, we can clearly see the dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music was dominent.
 
-<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="450"/>
+<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="900"/>
 
+### Exploratory analysis
+#### Features evolution
+<img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 
 ### Methods
 The first part of the methodology will be based on a visual graphical approach, aimed at establishing observations related to the different genres. The method will work on a weekly granularity and identification of statistically significant changes relative to a 95% confidence interval. The calculation of partial temporal derivatives, carried out over periods of variable granularity, will allow one to observe trends, of varying degrees of slowness depending on the granularity. In order to gain insights on the relative changes from one genre to another, and to better visualize the specific drift of each genre, a degree two Principal Component Analysis will be used.
