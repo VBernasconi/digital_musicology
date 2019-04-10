@@ -70,29 +70,31 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
 #### Musical genres
-Regarding the different music genres proposed by the database, we can see a large increase of their numbers throughout the studied period:
-
-<img src="images/music_genre_yearly.png" alt="drawing" width="450"/>
+Regarding the different music genres proposed by the database, there is an increase of their numbers throughout the studied period, as we saw in the first evaluation of the dataset. 
 
 In total, there are 987 different musical genres and 4961 songs do not have a given genre (either empty or nan value). Following is an excerpt of the first mostly assigned genres names.
 
 <img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-Due to the large amount of different genres, they will later be grouped into more global categories when possible. It is also important to understand the main genres listed above, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which might group songs with various musical genres. '**motown**' is also a specific case, since it is the name of an American record label. Hence, decisions will have to be made regarding these categories and whether or not they will be taken into account when working on music genres. The case of the '**mellow gold**' genre, which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s, will also requires our attention, since it is not a conventional genre in the musical field.
+Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
 
-Bellow is a primary grouping convention into more general categories:
-* **Pop**: [New wave pop, Brill building pop, Bubblegum pop, adult standards, ....]
-* **Rock**: [soft rock, album rock, folk rock, classic rock, rock and roll]
-* **Country**: [country rock, country, country gospel]
-* **Reggae**
-* **Disco**: [disco, post-disco, funk]
- * **Electro**
-* **Soul**: [classic soul, southern soul, quiet storm, northern soul, Chicago soul]
-* **R&B**: [urban contemporary]
-* **Metal**: [ hard rock, psychedelic rock, grunge]
-* **Blues**: [British blues]
-* **Jazz**: [jazz funk, vocal jazz, classic jazz]
-* **Folk**
+The distribution of genres was then plotted using a heatmap :
+
+<img src="images/genre_distribution.png" alt="drawing" width="450"/>
+
+Because of the dominance of the 'other' category, which makes hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap:
+
+<img src="images/genre_distribution_nother.png" alt="drawing" width="450"/>
+
+As we can see on these two heatmaps, there is a prevalence of rock musics between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
+
+<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="450"/>
+
+On the above, we can clearly see that hip hop seems to have reached its pick of use for the studied time range in the early 90s, similarly to caribbean and caribbean-influenced songs. Other music genres benefit from a more linear distribution over time.
+
+A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year. With the latter, we can clearly see the dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music was dominent.
+
+<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="450"/>
 
 
 ### Methods
