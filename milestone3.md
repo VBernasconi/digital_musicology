@@ -129,7 +129,9 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
 
-The fact that there is a greater proportion of songs listed as 'other', especially at the beginning of the studied period, in the early 60s, can be explained by the fact that these years are nowadays considered as _nostalgic_ years. They include a lot of music that can be considered as _old_ and that could easily fit the '**adult standards**' category. Another explaination could be the fact that these early years were the laboratory of diverse research and novelties in terms of musical genres and that many of them were not retained by history.
+The fact that there is a greater proportion of songs listed as 'other', especially at the beginning of the studied period, in the early 60s, is explained by the fact that these years are nowadays considered as _nostalgic_ years. 'other' thus includes categories such as '**adult standards**', '**christmas**' or '**mellow gold**', which are not musical genres but groupings of a variety of musical genres based on subjective criterias. 'other' also inglobes all **_None_** attributed titles, as explained previously. 
+
+However, another explaination of the fact that there is a prevalence of 'other' at the specific given period could be the fact that these early years were the laboratory of diverse research and novelties in terms of musical genres and that many of them were not retained by history, despite the popularity of one song at some point.
 
 In a general way this first set of results shows the great emergence of different musical styles over the studied period. The fact that we had to group the large amount of genres to more general classes and that this evolution is still perceivable is an interesting proof of that phenomenon. The great majority of top listed titles from which rock music benefits shows not only its popularity, but is also a hint of the diversity of subgenres that occured within this style.
 
@@ -137,6 +139,9 @@ In a general way this first set of results shows the great emergence of differen
 
 ## Discussion (critique de la conclusion)
 ### Arising Difficulties
+
+A major difficulty encountered was the diversity of genres. It was a discovery at first, because such a variety was not expected. We then had to find a suitable classification in order to group these categories. Many music styles classifications exist and can depend on the year such classifications were created and the prevalence of specific music styles. However, big classes, such as '**Rock**', '**Pop**', '**Blues**' and '**Jazz**' seem to be common to most of them. We finally chose a classification that could both show the emergence of new styles and would show the diversity of styles presented in the USA, at the years of our dataset. We then had to find online an easily retrievable classification with corresponding subgenres. In the end, the music style classification from AllMusic, made available by Wikipedia, was chosen. It corresponds the following classification:
+'**blues**', '**caribbean and caribbean-influenced**', '**r&b and soul**', '**rock**', '**country**', '**electronic music**', '**folk**', '**hip hop**', '**jazz**', '**latin**', '**pop**'.
 
 Did you encounter any difficulties? Which kind? Are they related to the data, the methods you chose, or your specific questions?
 
