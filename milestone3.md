@@ -2,7 +2,7 @@
 # Understanding the impact of the Cold War on Billboard Charts:  _When the American society reflects on music creation_
 
 ### Introduction
-The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitting historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
+The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled a large increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitant historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
 
 ### Research Question and Hypothesis
 Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
@@ -10,7 +10,7 @@ Regarding our main research question, which is to understand the evolution of mu
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to see an increase of loudness in rock-related genres musical pieces.
     * **duration_ms**: our hypothesis is that the duration of musical pieces may tend to be shorter, regarding the growing stressful context.
-    * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arise. However there should be an important convergence to a 4:4 time signature.
+    * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arise. However there should be a high convergence to a 4:4 time signature.
     * **tempo**: the major hypothesis regarding this aspect it that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society
     * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical piecess.
 The two major hypothesis regarding these features are that music will tend to be shorter, and tempo faster (according to literature, an increase up to 120-125 beats per minute).
@@ -67,10 +67,10 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 
 <img src="images/corr_features.png" alt="drawing" width="450"/>
 
-One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the important correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
+One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
 #### Musical genres
-Regarding the different music genres proposed by the database, we can see the important increase of their numbers throughout the studied period:
+Regarding the different music genres proposed by the database, we can see a large increase of their numbers throughout the studied period:
 
 <img src="images/music_genre_yearly.png" alt="drawing" width="450"/>
 
@@ -78,7 +78,7 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 
 <img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-Due to the important amount of different genres, they will later be grouped into more global categories when possible. It is also important to understand the main genres listed above, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which might group songs with various musical genres. '**motown**' is also a specific case, since it is the name of an American record label. Hence, decisions will have to be made regarding these categories and whether or not they will be taken into account when working on music genres. The case of the '**mellow gold**' genre, which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s, will also requires our attention, since it is not a conventional genre in the musical field.
+Due to the large amount of different genres, they will later be grouped into more global categories when possible. It is also important to understand the main genres listed above, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which might group songs with various musical genres. '**motown**' is also a specific case, since it is the name of an American record label. Hence, decisions will have to be made regarding these categories and whether or not they will be taken into account when working on music genres. The case of the '**mellow gold**' genre, which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s, will also requires our attention, since it is not a conventional genre in the musical field.
 
 Bellow is a primary grouping convention into more general categories:
 * **Pop**: [New wave pop, Brill building pop, Bubblegum pop, adult standards, ....]
