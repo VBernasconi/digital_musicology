@@ -70,15 +70,23 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
 ### Initial Analysis
+
+#### Methodology 
+
 #### Results (factuel)
 
-#### Interpretation
+##### 1. Features evolution
+<img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
+<img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 
-### Conclusion (interpretation en lien avec questions de recherche)
 
-### Discussion (critique de la conclusion)
-
-#### Musical genres
+##### 2. Musical genres
 Regarding the different music genres proposed by the database, there is an increase of their numbers throughout the studied period, as we saw in the first evaluation of the dataset. 
 
 In total, there are 987 different musical genres and 4961 songs do not have a given genre (either empty or nan value). Following is an excerpt of the first mostly assigned genres names.
@@ -105,16 +113,15 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 <img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
 
+#### Interpretation
+
+### Conclusion (interpretation en lien avec questions de recherche)
+
+### Discussion (critique de la conclusion)
+
+
+
 ### Exploratory analysis
-#### Features evolution
-<img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
-<img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 
 ### Methods
 The first part of the methodology will be based on a visual graphical approach, aimed at establishing observations related to the different genres. The method will work on a weekly granularity and identification of statistically significant changes relative to a 95% confidence interval. The calculation of partial temporal derivatives, carried out over periods of variable granularity, will allow one to observe trends, of varying degrees of slowness depending on the granularity. In order to gain insights on the relative changes from one genre to another, and to better visualize the specific drift of each genre, a degree two Principal Component Analysis will be used.
