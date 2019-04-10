@@ -21,7 +21,7 @@ The second part of the main research question is about how can the changes obser
 3. With regard to this aspect of the question, we seek to observe significant changes related to the African American civil rights movement, which could be expressed e.g. in the soul genre. We also expect significant historic musical events related to the counterculture movement, such as Woodstock Musical Festival in 1969, to impact music at a long-term, especially rock and folk.
 
 
-### Data description
+### Dataset
 
 #### Data gathering and description of the dataset
 The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1955 and 2017, found on the online platform [Kaggle](https://www.kaggle.com/), in csv format. This table contains 300'600 rows and eight columns, containing respectively the date of the week, the rank, the song title, the artist name, the number of weeks on charts, the musical piece's year of release, the track's popularity on Spotify and the artist popularity on Spotify. The rows between 1955 and 1958 are duplicated and low-quality data. By a brief visual evaluation of the data, it can be seen that the data concerning the Spotify database are mostly missing. The number of weeks on charts is also often false or missing.
@@ -68,6 +68,15 @@ In this plot, one can observe the first occurence of the songs per year. As the 
 <img src="images/corr_features.png" alt="drawing" width="450"/>
 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
+
+### Initial Analysis
+#### Results (factuel)
+
+#### Interpretation
+
+### Conclusion (interpretation en lien avec questions de recherche)
+
+### Discussion (critique de la conclusion)
 
 #### Musical genres
 Regarding the different music genres proposed by the database, there is an increase of their numbers throughout the studied period, as we saw in the first evaluation of the dataset. 
