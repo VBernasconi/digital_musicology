@@ -2,17 +2,17 @@
 # Understanding the impact of the Cold War on Billboard Charts:  _When the American society reflects on music creation_
 
 ### Introduction
-The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitting historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musics in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
+The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled an important increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitting historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
 
 ### Research Question and Hypothesis
 Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
 1. Based on the 6 following selected features, we expect to see significant variations in a set of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
-    * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to see an increase of loudness in rock-related genres musics.
-    * **duration_ms**: our hypothesis is that the duration of musics may tend to be shorter, regarding the growing stressful context.
+    * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to see an increase of loudness in rock-related genres musical pieces.
+    * **duration_ms**: our hypothesis is that the duration of musical pieces may tend to be shorter, regarding the growing stressful context.
     * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arise. However there should be an important convergence to a 4:4 time signature.
-    * **tempo**: the major hypothesis regarding this aspect it that musics tend to have a faster tempo, regarding the stressful context for the US civil society
-    * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musics.
+    * **tempo**: the major hypothesis regarding this aspect it that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society
+    * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical piecess.
 The two major hypothesis regarding these features are that music will tend to be shorter, and tempo faster (according to literature, an increase up to 120-125 beats per minute).
 2. In general, we also expect to see divergent developments between the different genres. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
 
@@ -24,7 +24,7 @@ The second part of the main research question is about how can the changes obser
 ### Data description
 
 #### Data gathering and description of the dataset
-The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1955 and 2017, found on the online platform [Kaggle](https://www.kaggle.com/), in csv format. This table contains 300'600 rows and eight columns, containing respectively the date of the week, the rank, the song title, the artist name, the number of weeks on charts, the music's year of release, the track's popularity on Spotify and the artist popularity on Spotify. The rows between 1955 and 1958 are duplicated and low-quality data. By a brief visual evaluation of the data, it can be seen that the data concerning the Spotify database are mostly missing. The number of weeks on charts is also often false or missing.
+The research is based on two datasets. The first dataset is composed of the Billboard weekly list (Billboard Top 100), between  1955 and 2017, found on the online platform [Kaggle](https://www.kaggle.com/), in csv format. This table contains 300'600 rows and eight columns, containing respectively the date of the week, the rank, the song title, the artist name, the number of weeks on charts, the musical piece's year of release, the track's popularity on Spotify and the artist popularity on Spotify. The rows between 1955 and 1958 are duplicated and low-quality data. By a brief visual evaluation of the data, it can be seen that the data concerning the Spotify database are mostly missing. The number of weeks on charts is also often false or missing.
 
 Based on song titles and artist names from this first dataset, a query is made to the [Spotify API](https://developer.spotify.com/documentation/web-api/quick-start/) in order to retrieve the corresponding entry in the Spotify database. This requires registering with Spotify as a developer and obtaining a token to access the database. The API returns json-formatted answers. The completion of the dataset is then done in several steps. The first step is to find the corresponding identifier of each track in the Spotify database, based on the artist's name and the song title. During this first run, 69% of matches were found. In a second step, this rate is increased to 78% by isolating the main artist's name and the main tokens of the title and thus submitting a simplified request to the API.
 
@@ -33,7 +33,7 @@ Then, the identifier obtained for each track allows access to the track features
 #### Preprocessing
 Data from multiple queries were merged into a single dataset. Subsequently, the billboard data was aggregated with the API data to obtain a usable dataset containing: the titles of the two databases (Billboard and Spotify), the artist name of the two databases (Billboard and Spotify), the identifier in the Spotify database, the tracks features, the audio features, a vector of the dates of each week when the track was present in the billboard chart, and a vector including the successive ranks in the billboard chart. Finally, the highest rank in the ranking is also recovered and stored. The column containing the number of weeks spent on the chart, which was of poor quality, as indicated above, was removed. It can moreover be retrieved easily for the weeks list. For reasons of data density and quality, data prior to the week of 8 August 1958 are not retained. This final preprocessed dataset is stored in json format, which unlike csv is able to deal the vector type.
 
-The data have two biases. The first is the fact that "only" 78% of them could be retrieved from the Spotify database. However, this seems relatively acceptable bias, all the more so if we adopt the standpoint that the music that are still available today and that have been digitized are the most representative of their period. Moreover, in the timeframe finally selected, this percentage reaches 91%. The second bias is related to the margin of error of Echonest algorithms when determining features.
+The data have two biases. The first is the fact that "only" 78% of them could be retrieved from the Spotify database. However, this seems relatively acceptable bias, all the more so if we adopt the standpoint that the musical pieces that are still available today and that have been digitized are the most representative of their period. Moreover, in the timeframe finally selected, this percentage reaches 91%. The second bias is related to the margin of error of Echonest algorithms when determining features.
 
 #### Corpus selection
 For reasons of data density and to be limited to the historical period covered by the research, only the rankings published between 8 August 1958 and 31 December 1995 have been kept in the corpus. The period extends after the end of the Cold War (until 1995) in order to see if post-Cold War changes in the political context may have influenced the music creation.
@@ -47,7 +47,7 @@ Finally, the corpus contains a total of 19,098 pieces of music representing 177,
 
 <img src="images/weeks_on_chart.png" alt="drawing" width="450"/>
 
-As we can see, most musics are staying less that 20 weeks on chart, with a maximum lifespan of 42.
+As we can see, most musical pieces are staying less that 20 weeks on chart, with a maximum lifespan of 42.
 
 
 <img src="images/features_description.png" alt="drawing" width="450"/>
@@ -78,7 +78,7 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 
 <img src="images/music_genre_tot.png" alt="drawing" width="180"/>
 
-Due to the important amount of different genres, they will later be grouped into more global categories when possible. It is also important to understand the main genres listed above, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musics that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which might group songs with various musical genres. '**motown**' is also a specific case, since it is the name of an American record label. Hence, decisions will have to be made regarding these categories and whether or not they will be taken into account when working on music genres. The case of the '**mellow gold**' genre, which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s, will also requires our attention, since it is not a conventional genre in the musical field.
+Due to the important amount of different genres, they will later be grouped into more global categories when possible. It is also important to understand the main genres listed above, such as '**adult standards**' that does not seem to be a genre but rather a category grouping musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which might group songs with various musical genres. '**motown**' is also a specific case, since it is the name of an American record label. Hence, decisions will have to be made regarding these categories and whether or not they will be taken into account when working on music genres. The case of the '**mellow gold**' genre, which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s, will also requires our attention, since it is not a conventional genre in the musical field.
 
 Bellow is a primary grouping convention into more general categories:
 * **Pop**: [New wave pop, Brill building pop, Bubblegum pop, adult standards, ....]
