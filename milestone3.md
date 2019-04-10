@@ -5,21 +5,21 @@
 The Cold War period, whose years from 1958 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled a large increase in the diversity of musical genres. Regarding these prompt changes and the socio-economico-political climate, we would like to understand how major genres evolved over time and try to determine, in a second phase of the project, the possible correlations with concomitant historical events. In order to conduct the research, we worked with the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States. The ranking of the Billboard is based on physical and digital sales, radio play, and online streaming in the United States.
 
 ### Research Question and Hypothesis
-Regarding our main research question, which is to understand the evolution of music from 1958 to 1995 and how it might have been impacted by contemporary events, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
-1. Based on the 6 following selected features, we expect to see significant variations in a set of major genres:
+
+Our main research question is to understand the evolution of music from 1958 to 1995 and how this evolution have been impacted by contemporary events. As the music is composed of different musical genres, a second part of the question research is about how can the change observed in these genres be linked to the historical context. What is the plausibility of theses relationships ? Which humans groups are the most affected by theses events and which genres are related to them ? 
+Regarding our main research question, we developed three main hypothesis that will have to be tested throughout the conduct of the project:
+
+1. With regard to the second part of the research question, we seek to observe significant change related to the African American civil rights movement, which could be expressed e.g. in the soul genre. We also expect significant historic musical events related to the counterculture movement, such as Woodstock Musical Festival in 1969, to impact music at a long-term, especially rock and folk.
+
+2. In general, we also expect to see divergent developments between the different genres (pop, rock, hip hop, etc). However, as the number of different genres increases through the year, many of these genres can be classified as subparts of the major genres, e.g. bubble gum pop is a subcategory of the pop genre. Knowing this, we assume that the difference for the chosen features is minimal between genres belonging to the same major genre.
+
+3. Based on the 6 following features, we expect to see significant variation in a set of major genres:
     * **key**: no specific hypothesis was determined regarding this feature.
-    * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). A hypothesis would be to see an increase of loudness in rock-related genres musical pieces.
-    * **duration_ms**: our hypothesis is that the duration of musical pieces may tend to be shorter, regarding the growing stressful context.
-    * **time_signature**: our hypothesis is that, regarding the experimental artistic context, some new time signatures might arise. However there should be a high convergence to a 4:4 time signature.
-    * **tempo**: the major hypothesis regarding this aspect it that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society
-    * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical piecess.
-The two major hypothesis regarding these features are that music will tend to be shorter, and tempo faster (according to literature, an increase up to 120-125 beats per minute).
-2. In general, we also expect to see divergent developments between the different genres. According to the increasing diversity of genres, we assume that the difference for the above features in-between similar genres, such as all the pop variety, is minimal.
-
-The second part of the main research question is about how can the changes observed in the different musical genres be linked to the historical context. What is the plausibility of these relationships? Which human groups are most affected by these events and which genres are related to them?
-
-3. With regard to this aspect of the question, we seek to observe significant changes related to the African American civil rights movement, which could be expressed e.g. in the soul genre. We also expect significant historic musical events related to the counterculture movement, such as Woodstock Musical Festival in 1969, to impact music at a long-term, especially rock and folk.
-
+    * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). Our hypothesis would be to see an increase of loudness in rock-related genres musical pieces.
+    * **duration_ms**:  hypothesis is that the duration of musical pieces may tend to be shorter, regarding the growing stressful context.
+    * **time_signature**: our hypothesis is that, regarding the experimental artistic contexts, some new time signatures might arise. However there should be a high convergence to a 4:4 time signature.
+    * **tempo**: our major hypothesis regarding this aspect is that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society (according to literature, an increase up to 120-125 beats per minute).
+    * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical pieces.
 
 ### Dataset
 
