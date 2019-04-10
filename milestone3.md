@@ -80,7 +80,7 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 ##### 2. Musical genres
 Due to the large amount of different genres, we decided to group them into more global categories. The latter was done based on the categorisation provided by the online database AllMusic and made easily retrivable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that reffer to chrismas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
 
-#### Results (factuel)
+#### Results
 
 ##### 1. Features evolution
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
@@ -116,7 +116,11 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 ##### 2. Musical genres
 
-With the last heatmap, we can clearly see the dominance of rock music from the mid-60s to the early 90s on the musical scene. Before the rise of rock music, country music seems to have been more dominent.
+With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
+
+The fact that there is a greater proportion of songs listed as 'other', especially at the beginning of the studied period, in the early 60s, can be explained by the fact that these years are nowadays considered as _nostalgic_ years. They include a lot of music that can be considered as _old_ and that could easily fit the '**adult standards**' category. Another explaination could be the fact that these early years were the laboratory of diverse research and novelties in terms of musical genres and that many of them were not retained by history.
+
+In a general way this first set of results shows the great emergence of different musical styles over the studied period. The fact that we had to group the large amount of genres to more general classes and that this evolution is still perceivable is an interesting proof of that phenomenon. The great majority of top listed titles from which rock music benefits shows not only its popularity, but is also a hint of the diversity of subgenres that occured within this style.
 
 ### Conclusion (interpretation en lien avec questions de recherche)
 
