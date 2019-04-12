@@ -90,7 +90,7 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 [Root change] {#rootchange}
+###### 1.1.1 Root change <a name="#rootchange"></a>
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 We can see a dominance of the C and G roots throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
