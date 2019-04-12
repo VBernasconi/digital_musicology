@@ -147,7 +147,7 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 #### 1. Features evolution
 ##### 1.1 Global changes
-###### <a href="###### 1.1.1 Root change">1.1.1 Root change</a>
+Regarding the [Root change](###### 1.1.1 Root change), we can say that....
 #### 2. Musical genres
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
