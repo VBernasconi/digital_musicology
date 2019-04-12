@@ -90,40 +90,43 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 Root change <a id="#keychange"></a>
+###### 1.1.1 Root change <a id="#rootchange"></a>
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 We can see a dominance of the C and G tonics throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
-###### 1.1.2 Time signature
+###### 1.1.2 Time signature <a id="#timesignaturechange"></a>
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
 In term of time signature, there is a great leading use of 4-time during the studied period, which even seems expand at the expense of the other types of time signatures. Hence, the 1 time signature seems to vanish, as well as the 5-time. The 3-time, which was still benefiting from a better share of percentages in the early years studied, namely around the 60s, slowly decreases and seems to reach its lower peak around the mid 80s.
 
-###### 1.1.3 Mode
+###### 1.1.3 Mode <a id="#modechange"></a>
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
 Throughout the studied period, we can see a leading majority in the use of major modes. However, the use of minor modes slowly increases over the years and benefits from a better share of percentage of use at the end of the given time range, going from less than 20% of use in 1959 to almost 40% in 1995.
 
-###### 1.1.4 Loudness
+###### 1.1.4 Loudness <a id="#loudnesschange"></a>
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 
-###### 1.1.5 Duration
+###### 1.1.5 Duration <a id="#durationchange"></a>
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
 <img src="images/drifts/duration.png" alt="drawing" width="900"/>
 
-###### 1.1.6 Tempo
+###### 1.1.6 Tempo <a id="#tempochange"></a>
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 
-###### 1.1.7 Energy
+###### 1.1.7 Energy <a id="#energychange"></a>
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
 <img src="images/drifts/energy.png" alt="drawing" width="900"/>
+The energy tends to rise slowly during the whole period, in four consequent steps. A first significant step occurs between 1962 and 1964. The second step, in 1970, appears to be driven by a salient event in June-July 1970. The third step takes place between 1973 and 1974 and the fourth and last step occurs between 1982 and 1984 and is preceded by a low-bound event which begins in September 1981 and ends in January 1982.
 
-###### 1.1.8 Valence
+###### 1.1.8 Valence <a id="#valencechange"></a>
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 <img src="images/drifts/valence.png" alt="drawing" width="900"/>
+The valence seems to be relatively stable until 1987. It falls significantly and durably at the end of the Cold War. This decrease is progressive rather than sudden but consequent though. 
+
+One can observe four major events in the valence salient drifts figure. The first occurs in July-August 1976, the second in November-December 1977, the third spread from March to August 1979 and the last event takes places between September 1981 to January 1982. These events occur in the form up and down cyclic events. The two last peaks are clearly visible also at year granularity. 
 
 ##### 1.2 Drifts
-
 Example of the identification of salient drifts with regard to the general trend over 5 years. This type of graph was created for each of the eight features. The red dots represent a salient drift exceeding the upper bound of the annual average smoothed over 5 years (at a 95% confidence interval), while the blue dots represent a salient drift exceeding the lower bound of this medium-term trend.
 
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
@@ -152,13 +155,17 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 #### 1. Features evolution
 ##### 1.1 Global changes
-As we have seen from the results of the [root changes](#keychange), there is a certain homogeneity in-between the different keys used and the traditional use of C seems to decrease a bit toward the end of the studied period. A possible interpretation would be the fact that the end of the 21th Century was at the heart of musical explorations, which pairs with the arrival of new musical genres. Indeed, the last half of the Century saw the emergence of rock, pop or hip hop, just to name a few. This emergence is probably accompanied by a slight shift in the conventional musical instruments used, such as the guitar for rock songs.  Hence, a possible explanation of this small modulation of root used would be that composers had to find solutions in order to better suit the majority of instruments used. 
+As we have seen from the results of the [root changes](#rootchange), there is a certain homogeneity in-between the different keys used and the traditional use of C seems to decrease a bit toward the end of the studied period. A possible interpretation would be the fact that the end of the 21th Century was at the heart of musical explorations, which pairs with the arrival of new musical genres. Indeed, the last half of the Century saw the emergence of rock, pop or hip hop, just to name a few. This emergence is probably accompanied by a slight shift in the conventional musical instruments used, such as the guitar for rock songs.  Hence, a possible explanation of this small modulation of root used would be that composers had to find solutions in order to better suit the majority of instruments used. 
 
 Regarding these results and the comparison with musical genres, it is interesting to see from <a href= “https://insights.spotify.com/int/2017/10/03/genres-and-key-signatures/”>Spotify insight</a> the different key signatures of each style. From their work, we can see that Rock music tends to use both C and D followed by G, which explains the similar repartition of these three root in our plot, since it seems that the genre is leading the Billboard chart in greater parts of our studied period.
 
 In terms of time signature, the 4/4 meter is the most commonly used type in western music, and the latter is greatly showed by the obtained results. The use of 4/4 allows more time to produce notes in-between each measure, whereas the ¾ meter is much more restricted and marked as a Waltz. Another interpretation is also the fact that there is a great emergence of rock throughout these years, as well as pop, country and blues at the early stages of the studied period, which all use in majority 4 times.
 
 The results regarding the different modes used can be addressed with respect to their affective quality. Indeed, previous <a href="https://www.jstor.org/stable/1416710?casa_token=BwZlFn70tigAAAAA:BBdwfU8J62HJlOxtoYbNibrotbpnr47ZDMI-ynZ8XFavGZseefEZT5-UN-H61DuRZKBIUB6H6L6PS1oLw9tGahhXF70tgVY22ZDo8R-07_bkVPMWQ9TB&seq=1#metadata_info_tab_contents">researches</a> have shown that major is usually felt as being more dynamic, bright, happy and more natural and fundamental than the minor. The latter would convey a darker or more depressive emotion. Hence, the slight increase of minor mode toward the end of the studied period of times can be put in correlation with the observed valence value that significantly decreases in the early 90s. These results would then mean that people at the end of the 21st Century tended to listen a bit more to more sad music, whereas the American population of the 60s was looking for more joyful music. This shift in emotion conveyed by songs can have many different interpretations, one being the change in the way people consume music. More research will have to be done toward that direction, but one could imagine that people were for example more dancing in the 60s and 70s and using music for that purpose, whereas in the 90s, with the arrival of new technologies such as the Walkman, the purpose of music consumption changed and became more of a personal experience and people were maybe looking for more strong feelings transmissions.
+
+As explained in the introduction, valence is a perceptual variable describing the subjective positive vibe of the music. One can note that [the drop of the valence](#valencechange), at the end of the Cold War, is concomitant with the fall of rock and pop. Both represent a significative part of the corpus and in appears to be a reasonable assumption to say that both may be linked to a high valence. This can be a factor of explanation of the valence drop. Another factor could be linked to the rise of the electronical music, such as techno. It was noted in the introduction that valence and energy are correlated features. On the contrary, during this period, both follow opposite paths. The techno-related music hypothesis is plausible it the sense that it might feel more energic but not very emotional, and therefore result in a lower valence but in a higher energy.
+
+On the other hand, the perceived [energy](#energychange) of music rises by nearly a third over the period, a very clear increase. This increase echoes also the increase in loudness. Both seem to be part of a broader economical-artistic trend that is reflected in many fields, <a href="https://journals.sagepub.com/doi/abs/10.1068/i0441aap">including e.g. cinema</a>. This movement is characterized by more frenetic artistic creations, always more stimulating for customers, in a creative context that addresses ever-increasing audiences and faces a production canonization.
 
 #### 2. Musical genres
 
