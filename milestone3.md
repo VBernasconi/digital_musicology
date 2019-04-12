@@ -90,9 +90,9 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 Root change <a name="#rootchange"></a>
+###### 1.1.1 Key change <a id="#keychange"></a>
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
-We can see a dominance of the C and G roots throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
+We can see a dominance of the C and G keys throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant keys that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
 ###### 1.1.2 Time signature
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
@@ -147,7 +147,7 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 #### 1. Features evolution
 ##### 1.1 Global changes
-Regarding the [Root change](#rootchange), we can say that....
+Regarding the [Key change](#keychange), we can say that....
 #### 2. Musical genres
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
