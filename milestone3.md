@@ -90,16 +90,28 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
+<img src="images/drifts/loudness.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
+<img src="images/drifts/duration.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
+<img src="images/drifts/tempo.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
+<img src="images/drifts/energy.png" alt="drawing" width="900"/>
+
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
+<img src="images/drifts/valence.png" alt="drawing" width="900"/>
 
 ##### 1.2 Drifts
-<img src="images/drifts/valence.png" alt="drawing" width="900"/>
+
 Example of the identification of salient drifts with regard to the general trend over 5 years. This type of graph was created for each of the eight features. The red dots represent a salient drift exceeding the upper bound of the annual average smoothed over 5 years (at a 95% confidence interval), while the blue dots represent a salient drift exceeding the lower bound of this medium-term trend.
 
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
