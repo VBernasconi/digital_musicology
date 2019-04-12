@@ -89,7 +89,7 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 Root change <a id="#rootchange"></a>
+###### 1.1.1 Root change <a name="#rootchange"></a>
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 We can see a dominance of the C and G tonics throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
@@ -154,7 +154,7 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 #### 1. Features evolution
 ##### 1.1 Global changes
-As we have seen from the results of the [root changes](#rootchange), there is a certain homogeneity in-between the different keys used and the traditional use of C seems to decrease a bit toward the end of the studied period. A possible interpretation would be the fact that the end of the 21th Century was at the heart of musical explorations, which pairs with the arrival of new musical genres. Indeed, the last half of the Century saw the emergence of rock, pop or hip hop, just to name a few. This emergence is probably accompanied by a slight shift in the conventional musical instruments used, such as the guitar for rock songs.  Hence, a possible explanation of this small modulation of root used would be that composers had to find solutions in order to better suit the majority of instruments used. 
+As we have seen from the results of the [root changes](#1.1.1-Root-change), there is a certain homogeneity in-between the different keys used and the traditional use of C seems to decrease a bit toward the end of the studied period. A possible interpretation would be the fact that the end of the 21th Century was at the heart of musical explorations, which pairs with the arrival of new musical genres. Indeed, the last half of the Century saw the emergence of rock, pop or hip hop, just to name a few. This emergence is probably accompanied by a slight shift in the conventional musical instruments used, such as the guitar for rock songs.  Hence, a possible explanation of this small modulation of root used would be that composers had to find solutions in order to better suit the majority of instruments used. 
 
 Regarding these results and the comparison with musical genres, it is interesting to see from <a href= “https://insights.spotify.com/int/2017/10/03/genres-and-key-signatures/”>Spotify insight</a> the different key signatures of each style. From their work, we can see that Rock music tends to use both C and D followed by G, which explains the similar repartition of these three root in our plot, since it seems that the genre is leading the Billboard chart in greater parts of our studied period.
 
