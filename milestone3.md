@@ -52,8 +52,7 @@ As we can see, most musical pieces are staying less that 20 weeks on chart, with
 
 <img src="images/features_description.png" alt="drawing" width="450"/>
 
-Hereover, a table containing the continuous features' statistics.
-
+Hereover, a table containing the continuous features' statistics. The perceptual variables (energy and valence) are scored on a scale without unit from 0 to 1, slightly biased upwards, but well distributed. The average duration of the songs is about three and a half minutes, with a high variance.  Tempo is measured in beat per minute (bpm), with an average of two beats per second. Loudness is measured in dB. It should be remembered that this scale is logarithmic, and that the variance is therefore greater than it seems.
 
 <img src="images/songs_per_key.png" alt="drawing" width="450"/>
 
