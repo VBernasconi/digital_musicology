@@ -90,9 +90,9 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 Key change <a id="#keychange"></a>
+###### 1.1.1 Root change <a id="#keychange"></a>
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
-We can see a dominance of the C and G keys throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant keys that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
+We can see a dominance of the C and G tonics throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
 ###### 1.1.2 Time signature
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
@@ -102,18 +102,23 @@ In term of time signature, there is a great leading use of 4-time during the stu
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
 Throughout the studied period, we can see a leading majority in the use of major modes. However, the use of minor modes slowly increases over the years and benefits from a better share of percentage of use at the end of the given time range, going from less than 20% of use in 1959 to almost 40% in 1995.
 
+###### 1.1.4 Loudness
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 
+###### 1.1.5 Duration
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
 <img src="images/drifts/duration.png" alt="drawing" width="900"/>
 
+###### 1.1.6 Tempo
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 
+###### 1.1.7 Energy
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
 <img src="images/drifts/energy.png" alt="drawing" width="900"/>
 
+###### 1.1.8 Valence
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 <img src="images/drifts/valence.png" alt="drawing" width="900"/>
 
