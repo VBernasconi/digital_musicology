@@ -89,12 +89,16 @@ Due to the large amount of different genres, we decided to group them into more 
 
 #### 1. Features evolution
 ##### 1.1 Global changes
+
+###### 1.1.1 Root change
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 We can see a dominance of the C and G roots throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
+###### 1.1.2 Time signature
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
 In term of time signature, there is a great leading use of 4-time during the studied period, which even seems expand at the expense of the other types of time signatures. Hence, the 1 time signature seems to vanish, as well as the 5-time. The 3-time, which was still benefiting from a better share of percentages in the early years studied, namely around the 60s, slowly decreases and seems to reach its lower peak around the mid 80s.
 
+###### 1.1.3 Mode
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
 Throughout the studied period, we can see a leading majority in the use of major modes. However, the use of minor modes slowly increases over the years and benefits from a better share of percentage of use at the end of the given time range, going from less than 20% of use in 1959 to almost 40% in 1995.
 
@@ -141,6 +145,9 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 ### Interpretation
 
+#### 1. Features evolution
+##### 1.1 Global changes
+###### <a href="###### 1.1.1 Root change">1.1.1 Root change</a>
 #### 2. Musical genres
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominent. We can also see that musical genres, such as hip hop, caribbean and electronic appeared later on the musical scene. 
