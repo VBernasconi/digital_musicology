@@ -104,14 +104,25 @@ Throughout the studied period, we can see a leading majority in the use of major
 ###### 1.1.4 Loudness <a id="#loudnesschange"></a>
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
+The first graph clearly shows an augmentation of the overall loudness of musical pieces. Relatively to the range of value that this feature can take, from -60dB to 0dB,  this is not such a big increase as it goes from -11,5dB to -8dB. The periods where the increase was the bigger were from 1972 to 1984 and since 1993.
+
+The second graph shows three major events where a positive change appears in comparison to the general trend of the loudness. The first twos events occur in March-April 1977 and from January to April and August 1984. The last event takes place during August, September and December of year 1995, but as it occurs at the end of the graph, this could just be an effect of how the padding was made to compute the drifts, and then not be relevant
 
 ###### 1.1.5 Duration <a id="#durationchange"></a>
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
 <img src="images/drifts/duration.png" alt="drawing" width="900"/>
+The first graph clearly shows an increase of the duration of musical pieces through time. From 1959 to 1964, the increase is really small et not really significant. However from year 1964 and until year 1979, there is a significant increase of duration of musical pieces as it goes from 1550000 ms (almost 3 minutes) to 265000 ms (more than 4,5 minutes). After that, there is a small decrease where the duration is more close to 240000 ms (4 minutes) followed by a small increase that leads again the duration to around 4,5 minutes.
+
+The second graph shows two major events have happened. The first one is during the months of January and March to May 1964 , where there is a negative change in comparison to the general trend, which was more to the increase when here there is a decrease of duration. The second one is in February-March 1990, where there is a positive change in comparison to the general trend. There is a possibility of a third event in 1995, but as the graph ends in 1996, this is probably only a effect due to the padding.
+
 
 ###### 1.1.6 Tempo <a id="#tempochange"></a>
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
+The first graph shows that there is not really a difference in tempo through the years, the changes that appear are not significant because of the confidence interval.
+
+No major event can be observed in the tempo salient drift figure.
+
 
 ###### 1.1.7 Energy <a id="#energychange"></a>
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
