@@ -129,7 +129,7 @@ One can observe four major events in the valence salient drifts figure. The firs
 Example of the identification of salient drifts with regard to the general trend over 5 years. This type of graph was created for each of the eight features. The red dots represent a salient drift exceeding the upper bound of the annual average smoothed over 5 years (at a 95% confidence interval), while the blue dots represent a salient drift exceeding the lower bound of this medium-term trend.
 
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
-This graph represents the sum of the drifts, month by month, for each of the eight features. Denser regions represent periods when many drifts have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time.
+This graph represents the sum of the drifts, month by month, for each of the eight features. Denser regions represent periods when many drifts have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time. The pink highlights represent the major events, defined as a suite or a stack of at least 3 events within a three-month period. 
 
 #### 2. Musical genres
 The distribution of genres was plotted using a heatmap :
@@ -165,6 +165,20 @@ The results regarding the different modes used can be addressed with respect to 
 As explained in the introduction, valence is a perceptual variable describing the subjective positive vibe of the music. One can note that [the drop of the valence](#valencechange), at the end of the Cold War, is concomitant with the fall of rock and pop. Both represent a significative part of the corpus and in appears to be a reasonable assumption to say that both may be linked to a high valence. This can be a factor of explanation of the valence drop. Another factor could be linked to the rise of the electronical music, such as techno. It was noted in the introduction that valence and energy are correlated features. On the contrary, during this period, both follow opposite paths. The techno-related music hypothesis is plausible it the sense that it might feel more energic but not very emotional, and therefore result in a lower valence but in a higher energy.
 
 On the other hand, the perceived [energy](#energychange) of music rises by nearly a third over the period, a very clear increase. This increase echoes also the increase in loudness. Both seem to be part of a broader economical-artistic trend that is reflected in many fields, <a href="https://journals.sagepub.com/doi/abs/10.1068/i0441aap">including e.g. cinema</a>. This movement is characterized by more frenetic artistic creations, always more stimulating for customers, in a creative context that addresses ever-increasing audiences and faces a production canonization.
+
+##### 1.2 Major events
+| Event number | Dates                  | Features changes                                | Historical events |
+|--------------|------------------------|-------------------------------------------------|-------------------|
+| 1            | Dec. 1959 – Feb. 1960  | low energy, low loudness                        |                   |
+| 2            | Dec. 1960 – Feb. 1961  | low energy, low tempo, root change              |                   |
+| 3            | Nov. 1963 – May 1964   | high loudness, short duration                   |                   |
+| 4            | Jul. 1974 – Sep. 1974  | more 4/4                                        |                   |
+| 5            | Mar. 1979 – Oct. 1979  | high valence, high tempo, more 4/4, root change |                   |
+| 6            | Sep. 1981 – Aug. 1982  | low valence, low energy, short duration         |                   |
+| 7            | May. 1983 – Jul. 1983  | high tempo, more 4/4                            |                   |
+| 8            | Jan. 1984 – Apr. 1984  | high loudness                                   |                   |
+| 9            | Apr. 1987 – Jun. 1987  | more 4/4                                        |                   |
+| 10           | Oct. 1989 – Mar. 1990  | long duration, more 4/4                         |                   |
 
 #### 2. Musical genres
 
