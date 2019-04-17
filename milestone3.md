@@ -218,15 +218,9 @@ In a general way this first set of results shows the great emergence of differen
 A major difficulty encountered was the diversity of genres. It was a discovery at first, because such a variety was not expected. We then had to find a suitable classification in order to group these categories. Many music styles classifications exist and can depend on the year such classifications were created and the prevalence of specific music styles. However, big classes, such as '**Rock**', '**Pop**', '**Blues**' and '**Jazz**' seem to be common to most of them. We finally chose a classification that could both show the emergence of new styles and would show the diversity of styles presented in the USA, at the years of our dataset. We then had to find online an easily retrievable classification with corresponding subgenres. In the end, the music style classification from AllMusic, made available by Wikipedia, was chosen. It corresponds the following classification:
 '**blues**', '**caribbean and caribbean-influenced**', '**r&b and soul**', '**rock**', '**country**', '**electronic music**', '**folk**', '**hip hop**', '**jazz**', '**latin**', '**pop**'.
 
-Did you encounter any difficulties? Which kind? Are they related to the data, the methods you chose, or your specific questions?
-
-How are you going to deal with them? Propose clear and feasible solutions!
-
 ### Interesting Problems
 
-Did you find something unexpected?
-
-Did you encounter problems that can’t be solved given the limits of your project?
+One of our most unexpected result was the tempo. Indeed, our hypothesis (see Research Question and Hypothesis) was that musical pieces tend to have a faster tempo over the years, regarding the stressful context for the US civil society. As explained in the Results and Interpretation sections, we discovered, with the resulting graph of the representation of tempo through the studied period of time, that tempo does not change significantly. However, as this graph represents the aggregation of all genres, it would be interesting to conduct further research to see if a change could be perceived for specific musical genres.
 
 ### Next steps towards the final analysis
 
