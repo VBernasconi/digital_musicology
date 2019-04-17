@@ -151,7 +151,7 @@ Because of the dominance of the 'other' category, which makes it hard to perceiv
 
 <img src="images/genre_distribution_nother.png" alt="drawing" width="2000"/>
 
-As we can see on these two heatmaps, there is a prevalence of rock musics between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
+As we can see on these two heatmaps, there is a prevalence of rock musical pieces between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
 
 <img src="images/genre_distribution_perc_nother.png" alt="drawing" width="2000"/>
 
