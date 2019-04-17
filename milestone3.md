@@ -47,8 +47,7 @@ Finally, the corpus contains a total of 19,098 pieces of music representing 177,
 
 <img src="images/weeks_on_chart.png" alt="drawing" width="450"/>
 
-As we can see, most musical pieces are staying less that 20 weeks on chart, with a maximum lifespan of 42.
-
+As we can see, most musical pieces are staying less that 20 weeks on chart, with a maximum lifespan of 42. However, thanks to the logarithmic scale, one can see that several orders of magnitude separate the number of musics that remain less than 20 weeks from those that remain more than 30 weeks on the chart. This means that beyond 20 weeks, the probability of a song remaining in the ranking drops sharply. Before this threshold, the probability of maintaining itself decreases linearly, which virtually corresponds to a plateau in this distribution curve.
 
 <img src="images/features_description.png" alt="drawing" width="450"/>
 
