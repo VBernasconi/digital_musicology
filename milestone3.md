@@ -188,13 +188,13 @@ On the other hand, the perceived [energy](https://github.com/ValentineCmoi/digit
 | 1            | Dec. 1959 – Feb. 1960  | low energy, low loudness                        |
 | 2            | Dec. 1960 – Feb. 1961  | low energy, low tempo, root change              |
 | 3            | Nov. 1963 – May 1964   | high loudness, short duration                   |
-| 4            | Jul. 1974 – Sep. 1974  | more 4/4                                        |
-| 5            | Mar. 1979 – Oct. 1979  | high valence, high tempo, more 4/4, root change |
+| 4            | Jul. 1974 – Sep. 1974  | more 4:4                                        |
+| 5            | Mar. 1979 – Oct. 1979  | high valence, high tempo, more 4:4, root change |
 | 6            | Sep. 1981 – Aug. 1982  | low valence, low energy, short duration         |
-| 7            | May. 1983 – Jul. 1983  | high tempo, more 4/4                            |
+| 7            | May. 1983 – Jul. 1983  | high tempo, more 4:4                            |
 | 8            | Jan. 1984 – Apr. 1984  | high loudness                                   |
-| 9            | Apr. 1987 – Jun. 1987  | more 4/4                                        |
-| 10           | Oct. 1989 – Mar. 1990  | long duration, more 4/4                         |
+| 9            | Apr. 1987 – Jun. 1987  | more 4:4                                        |
+| 10           | Oct. 1989 – Mar. 1990  | long duration, more 4:4                         |
 
 The above table is a summary of matching dates and feature changes. However, it seems difficult to find direct events that could have impacted these changes. In terms of music styles, from a brief overview one can easily see the gentle decrease of popularity of country music, which is strongly related to the American culture. This decrease gradually let place to rock, which can be understood as an opening to international culture, as this genre find great influences and production centers in Europe as well. This ‘internalization’ of musical culture might find its roots in the rising globalisation phenomenon that is a direct effect of arising diffusion tools, such as television. Further research could thus be conducted toward this phenomenon in order to better understand the evolution of musical trends. Indeed, it seems from a first approach quite difficult to link specific historical events with feature changes that occurred in the studied period of time. Another approach would be to apprehend these changes more globally and understand the evolution of a society not only from a perspective of specific social events that might have taken place, but also it terms of technical progress and changes that transformed the everyday life of citizens and the way population changed its consumption of music and cultural products.
 
