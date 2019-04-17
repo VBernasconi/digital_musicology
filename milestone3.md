@@ -181,7 +181,7 @@ As explained in the introduction, valence is a perceptual variable describing th
 
 On the other hand, the perceived [energy](#energychange) of music rises by nearly a third over the period. A very clear increase. This increase echoes also the increase in loudness. Both seem to be part of a broader economical-artistic trend that is reflected in many fields, <a href="https://journals.sagepub.com/doi/abs/10.1068/i0441aap">including e.g. cinema</a>. This movement is characterized by more frenetic artistic creations, always more stimulating for customers, in a creative context that addresses ever-increasing audiences.
 
-##### 1.2 Major events
+##### 1.2 Historical interpretations
 
 | Event number | Dates                  | Features changes                                |
 |--------------|------------------------|-------------------------------------------------|
@@ -196,7 +196,7 @@ On the other hand, the perceived [energy](#energychange) of music rises by nearl
 | 9            | Apr. 1987 – Jun. 1987  | more 4/4                                        |
 | 10           | Oct. 1989 – Mar. 1990  | long duration, more 4/4                         |
 
-From a brief overview, one can easily see the gentle decrease of popularity of country music, which is strongly related to the American culture. This decrease lets place to rock, which can be understood as an aperture to international culture, as this genre find great influences and production centers in Europe as well. This ‘internalization’ of the culture might find its roots in the rising mundialization phenomenon that is a direct effect of arising diffusion tools, such as television. Further research could thus be conducted toward this phenomenon in order to better understand the evolution of musical trends. Indeed, it seems from a first approach quite difficult to link specific historical events with feature changes that occurred in the studied period of time. Another approach would be to apprehend these changes more globally and understand the evolution of a society not only from a perspective of specific social events that might have taken place, but also it terms of technical progress and changes that transformed the everyday life of citizens and the way population changed its consumption of music and cultural products.
+The above table is a summary of matching dates and feature changes. However, it seems difficult to find direct events that could have impacted these changes. In terms of music styles, from a brief overview one can easily see the gentle decrease of popularity of country music, which is strongly related to the American culture. This decrease gradually let place to rock, which can be understood as an opening to international culture, as this genre find great influences and production centers in Europe as well. This ‘internalization’ of musical culture might find its roots in the rising globalisation phenomenon that is a direct effect of arising diffusion tools, such as television. Further research could thus be conducted toward this phenomenon in order to better understand the evolution of musical trends. Indeed, it seems from a first approach quite difficult to link specific historical events with feature changes that occurred in the studied period of time. Another approach would be to apprehend these changes more globally and understand the evolution of a society not only from a perspective of specific social events that might have taken place, but also it terms of technical progress and changes that transformed the everyday life of citizens and the way population changed its consumption of music and cultural products.
 
 #### 2. Musical genres
 
@@ -208,9 +208,7 @@ However, another explanation of the prevalence of 'other' at the specific given 
 
 In a general way, this first set of results shows the great emergence of different musical styles over the studied period. The fact that we had to group the large amount of genres to more general classes and that this evolution is still perceivable is an interesting proof of that phenomenon. The great majority of top listed titles from which rock music benefits shows not only its popularity, but is also a hint of the diversity of subgenres that occurred within this style.
 
-## Conclusion (interpretation en lien avec questions de recherche)
-
-## Discussion (critique de la conclusion)
+## Discussion 
 ### Arising Difficulties
 
 A major difficulty encountered was the diversity of genres. It was a discovery at first, because such a variety was not expected. We then had to find a suitable classification in order to group these categories. Many music styles classifications exist and can depend on the year such classifications were created and the prevalence of specific music styles. However, big classes, such as '**Rock**', '**Pop**', '**Blues**' and '**Jazz**' seem to be common to most of them. We finally chose a classification that could both show the emergence of new styles and would show the diversity of styles presented in the USA, at the years of our dataset. We then had to find an easily retrievable classification with corresponding subgenres. In the end, the music style classification from AllMusic, made available by Wikipedia, was chosen. It corresponds the following classification:
@@ -222,6 +220,11 @@ One of our most unexpected result was the tempo. Indeed, our hypothesis (see Res
 
 ### Next steps towards the final analysis
 
+Further research will have to be done in terms of feature changes for each of the main genres. Such information might help better understanding how different musical communities evolved over years and if they could be more easily put in correlation with historical events or cultural changes. 
+
+Regarding the historical interpretation of these results, more research will have to be done to find appropriate big social changes or political decisions that could be put in correlation with feature changes. Other paths, such as a broader analyze of shifts in cultural products consumption due to new technologies and globalization could be considered, as discussed in the interpretation of the results.
+
+A last step would be to perform machine learning on the dataset in order to better perceive the correlation between the features and their corresponding genre. A first approach would be to perform a Fischer LDA in order to see characteristic features of a genre. A second one would be to perform an unsupervised clustering algorithm, namely a K-mean, in order to see if these clusters are representative of a genre.
 
 
 ## Literature
