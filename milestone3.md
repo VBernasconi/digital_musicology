@@ -223,7 +223,7 @@ Further research will have to be done in terms of feature changes for each of th
 
 Regarding the historical interpretation of these results, more research will have to be done to find appropriate big social changes or political decisions that could have had an impact on feature changes. Other paths, such as a broader analyze of shifts in cultural products consumption due to new technologies and globalization could be considered, as discussed in the interpretation of the results.
 
-A last step would be to perform machine learning on the dataset in order to better perceive the correlation between the features and their corresponding genre. A first approach would be to perform a Fischer LDA in order to see characteristic features of a genre. A second one would be to perform an unsupervised clustering algorithm, namely a K-mean, in order to see if these clusters are representative of a genre.
+A last step would be to perform machine learning on the dataset in order to better perceive the correlation between the features and their corresponding genre. A first approach would be to perform a Fisher LDA in order to see characteristic features of a genre. A second one would be to perform an unsupervised clustering algorithm, namely a K-mean, in order to see if these clusters are representative of a genre.
 
 
 ## Literature
