@@ -89,7 +89,7 @@ Due to the large amount of different genres, we decided to group them into more 
 #### 1. Features evolution
 ##### 1.1 Global changes
 
-###### 1.1.1 Root change <a name="#rootchange"></a>{#rootchange}
+###### 1.1.1 Root change {#rootchange}
 <img src="images/yearly_features_change/root.png" alt="drawing" width="900"/>
 One can see a dominance of the C and G tonics throughout the studied time range. However, C seems to slowly decreases in the early 90s, in favor of the C#. Others dominant roots that seem to grow over the years and compete with the two firsts in the late 70s and early 80 are D and A. The use of other roots is rather constant, with a slight increase in the use of F# in the mid 90s, whereas D# seems to vanish a bit from common usage at that same time. 
 
@@ -101,7 +101,7 @@ In terms of time signature, one should note the largely leading use of 4-time du
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
 Throughout the studied period, one can see a leading majority in the use of major modes. However, the use of minor modes slowly increases over the years and benefits from a better percentage share at the end of the given time range, going from less than 20% of use in 1959 to almost 40% in 1995.
 
-###### 1.1.4 Loudness <a id="#loudnesschange"></a>{#loudnesschange}
+###### 1.1.4 Loudness {#loudnesschange}
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 The first graph clearly shows an augmentation of the overall loudness of musical pieces. Relatively to the range of value that this feature can take, from -60dB to 0dB, this might not seem such a big increase as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The periods where the increase was the bigger were from 1972 to 1984 and since 1993.
