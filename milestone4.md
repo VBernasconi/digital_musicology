@@ -253,3 +253,7 @@ A last step would be to perform machine learning on the dataset in order to bett
 https://doi.org/10.1017/S0261143013000032</a>]
 
 It seems that a great work was conducted during the 70s and 80s in order to understand the social significance of music and its relationship to sociological events. Indeed, the Cold War saw the emergence of major popular cultural movements. Many artistic fields, starting by art historians, were trying to understand the impact and influences of the political situation. More recently, in 2006, the <a href= http://ams-net.org/cwmsg/>AMS Cold War and Music Study Group</a> was created by the American Musicological Society in order to understand the impact of this important event on the field. However, most of these empirical studies were focusing on lyrics and genres of music, on the predominance of certain musicians on the market and on the impact of leading recording companies in the music industry. It seems that no direct analysis of the technical music properties, such as harmony, keys or tempo, and their evolution through the years was put in relationship to the sociological context. The idea would be to go as well from the performing social context to the music generated, but to determine the structural impact rather than the style or genre evolutions.
+
+## Milestone 5 project repository
+
+Milestone 5 project repository can be found under the following link <a href= https://www.overleaf.com/read/xynqscwthvvy>https://www.overleaf.com/read/xynqscwthvvy</a>
