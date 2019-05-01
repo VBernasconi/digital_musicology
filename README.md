@@ -17,6 +17,9 @@ __data/__
 
 __json/__
 * _corpus.json_ : The cleaned and preprocessed corpus in json format
+* _database_genres_classification.json_ : The corpus with corresponding main genre category for each subgenre
+* _genre_categories_grouped.json_ : The corpus with on a single row for each title the subgenres and corresponding main genres
+* _music_genres_classification.json_ : json file containing the main music genre categories and their corresponding subgenres
 
 __images/__
 * This repository just contains the images found in the .md milestones files
@@ -27,6 +30,8 @@ __Home repository__
 * _Basic_statistics.ipynb_ : Jupyter notebook containing the code used to compute the basic statistics described in milestone2.md
 * _Exploratory_analysis.ipynb_ : Jupyter notebook containing the code used to compute the features change and the salient drifts, presented in milestone 3
 * _Machine_learning.ipynb_ : Jupyter notebook containing the code used to cluster the songs, and to investigate the characteristic features of the various genres, as presented in milestone 4
+* _Genres_classification.ipynb_ : Jupyter notebook containing the code used to classify the subgenres into greater categories of genres based on the classification retrieved with the help of Musical_genres_scrapper.ipynb. Contains also research on data with time signature 1/4
+* _Musical_genres_scrapper.ipynb_ : Jupyter notebook containing the code used to retrieve the main genre classification from Wikipedia
 * _milestone1.md_ : Project milestone 1 description
 * _milestone2.md_ : Project milestone 2 description
 * _milestone3.md_ : Project milestone 3 description – exploratory analysis
