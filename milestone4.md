@@ -78,7 +78,7 @@ In total, there are 987 different musical genres and 4961 songs do not have a gi
 #### 1. Features evolution
 To observe the evolution of the different features over time, annual granularity is preferred. As it allows to observe trends clearly and limit noise. The 95% confidence interval is also represented, so that trends can be visually identified. Categorical variables are represented according to their share in the total number of observations. 
 
-In a second step, the salient observations are mathematically identified and extracted. To detect salient observations, the annual evolution of each feature is smoothed by convolution with a 5-year uniform smoothing filter. A replication padding is carried out to avoid shrinking. Then, the 95% interval of this representation of this smoothed annual evolution is calculated. The lower and upper bounds of this range contain non-salient observations of the distribution, while observations outside are considered salient. This procedure allows to highlight significant drifts beyond the medium-term evolution of the music, the latter being already visible in the other graphs. To also include the variations of the categorical variables, the latter are represented as integers. Finally, the salient observations of the different features are gathered in a single list so that they can represent and observe the concomitant drifts. 
+In a second step, the salient peaks are mathematically identified and extracted. To detect salient peaks, the annual evolution of each feature is smoothed by convolution with a 5-year uniform smoothing filter. A symmetric 2-year replication padding is carried out to avoid shrinking. The replication padding simply consists in replicating the values of the first year to the two years before the start of the data, respectively replicating the values of the last year to the two years after the end of the data. Then, the 95% interval of this representation of this smoothed annual evolution is calculated. The lower and upper bounds of this range contain non-salient observations of the distribution, while observations outside are considered salient. This procedure allows to highlight salient peaks beyond the medium-term evolution of the music, the latter being already visible in the other graphs. To also include the variations of the categorical variables, the latter are represented as integers. Finally, the salient peaks of the different features are gathered in a single list so that they can represent and observe the concomitant salient peaks. 
 
 #### 2. Musical genres
 Due to the large amount of different genres, we decided to group them into more global categories. This was done based on the categorisation provided by the online database AllMusic and made easily retrievable by Wikipedia on their webpage <a href="https://en.wikipedia.org/wiki/List_of_music_styles"> List of music styles </a>. Hence, the content of the html page was extracted in order to list all genres and their corresponding subgenres into a json file <a href="https://github.com/ValentineCmoi/digital_musicology/blob/master/json/music_genres_classification.json"> music_genre_classification</a>. It was then used to assign for each subgenre of each song a main genre. When no corresponding main genre could be found, the name 'other' was attributed. Regarding this 'other' entry, it is important to understand that some genres, such as main genres listed above that corresponds to '**adult standards**', '**christmas**', '**motown**', '**mellow gold**' are not genres per se but rather categories that can group many different genres. Indeed, '**adult standards**' groups musical pieces that might be more attractive to an older audience (50 years old and above). Same applies with the '**christmas**' category, which groups songs that refer to Christmas, and '**mellow gold**', which seems to have been invented by Spotify to group classic rock of the ‘60s, ‘70s, and ‘80s.
@@ -105,7 +105,7 @@ Throughout the studied period, one can see a leading majority in the use of majo
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 The first graph clearly shows an augmentation of the overall loudness of musical pieces. Relatively to the range of value that this feature can take, from -60dB to 0dB, this might not seem such a big increase as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The periods where the increase was the bigger were from 1972 to 1984 and since 1993.
 
-The second graph shows three major events where a positive change appears in comparison to the general trend of the loudness. The first two events occur in March-April 1977 and from January to April and August 1984. The last event takes place during August, September and December of year 1995, but as it occurs at the end of the graph, this could just be an effect of how the padding was made to compute the drifts, and then not be relevant
+The second graph shows three major events where a positive change appears in comparison to the general trend of the loudness. The first two events occur in March-April 1977 and from January to April and August 1984. The last event takes place during August, September and December of year 1995, but as it occurs at the end of the graph, this could just be an effect of how the padding was made to compute the salient peaks, and then not be relevant
 
 ###### 1.1.5 Duration
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
@@ -120,7 +120,7 @@ The second graph shows that two major events have happened. The first one occurr
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 The first graph shows that there is not really a difference in tempo through the years, the changes that appear are not significant because of the confidence interval.
 
-No significant event can be observed in the tempo salient drift figure.
+No significant event can be observed in the tempo salient peaks figure.
 
 
 ###### 1.1.7 Energy
@@ -133,11 +133,11 @@ The energy tends to rise slowly during the whole period, in four consequent step
 <img src="images/drifts/valence.png" alt="drawing" width="900"/>
 The valence seems to be relatively stable until 1987. It falls significantly and durably at the end of the Cold War. This decrease is progressive rather than sudden but consequent though. 
 
-One can observe four major events in the valence salient drifts figure. The first occurs in July-August 1976, the second in November-December 1977, the third spread from March to August 1979 and the last event takes places between September 1981 to January 1982. These events occur in the form of up-and-down cyclic events. The two last peaks are clearly visible also at year granularity. 
+One can observe four major events in the valence salient peaks figure. The first occurs in July-August 1976, the second in November-December 1977, the third spread from March to August 1979 and the last event takes places between September 1981 to January 1982. These events occur in the form of up-and-down cyclic events. The two last peaks are clearly visible also at year granularity. 
 
-##### 1.2 Drifts
+##### 1.2 Salient peaks
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
-This graph represents the sum of the drifts, month by month, for each of the eight features. Denser regions represent periods when many drifts have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time. The pink highlights represent the major events, defined as a suite or a stack of at least 3 events within a three-month period. 
+This graph represents the sum of the salient peaks, i.e. the projection of all salient peaks in a single plot, month by month, for each of the eight features. Denser regions represent periods when many salient peaks have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time. The pink highlights represent the major events, defined as a suite or a stack of at least 3 events within a three-month period. 
 
 #### 2. Musical genres
 The distribution of genres was plotted using heatmaps:
@@ -157,6 +157,9 @@ On the above, we can clearly see that hip hop seems to have reached its pick of 
 A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year.
 
 <img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
+
+#### 3. Clustering
+
 
 ### Interpretation
 
