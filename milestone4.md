@@ -141,6 +141,18 @@ The valence seems to be relatively stable until 1987. It falls significantly and
 
 One can observe four major events in the valence salient peaks figure. The first occurs in July-August 1976, the second in November-December 1977, the third spread from March to August 1979 and the last event takes places between September 1981 to January 1982. These events occur in the form of up-and-down cyclic events. The two last peaks are clearly visible also at year granularity. 
 
+###### 1.1.9 Statistical significance
+To show the order of magnitude of the statistical significance in relation to these plots representing the 95% confidence interval, a bootstrapped two-sample test (Welsch) has been performed on the data. The null-hypothesis is that both samples have equal means and it was rejected in every test performed. It shows that visual analysis using the figures is more than sufficient to establish the correlation, thanks to the very large amount of data.
+
+| Feature                     | Sample 1  | Sample 2  | P-value  |
+|-----------------------------|-----------|-----------|----------|
+| loudness                    | 1959-1977 | 1978-1995 | 1e-51    |
+| time signature (4/4 vs 3/4) | 1959-1974 | 1975-1995 | 5e-84    |
+| mode                        | 1959-1970 | 1983-1995 | 3e-86    |
+| duration                    | 1959-1965 | 1974-1995 | < 1e-200 |
+| energy                      | 1959-1970 | 1983-1995 | < 1e-200 |
+| valence                     | 1959-1986 | 1990-1995 | 3e-25    |
+
 ##### 1.2 Salient peaks
 <img src="images/drifts/drift_counts.png" alt="drawing" width="900"/>
 This graph represents the sum of the salient peaks, i.e. the projection of all salient peaks in a single plot, month by month, for each of the eight features. Denser regions represent periods when many salient peaks have occurred concurrently, while higher peaks represent a cross-sectional impact on several features at the same time. The pink highlights represent the major events, defined as a suite or a stack of at least 3 events within a three-month period. 
