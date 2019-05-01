@@ -164,8 +164,14 @@ A third heatmap with a normalized distribution per year was finally produced in 
 
 <img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
 
-#### 3. Clustering
+#### 3. Machine learning
+Various machine learning techniques have been applied in order to better understand the essence of genres and their differences. First, the categorical variables were subjected to dummy encoding. The first technique that was applied was a Fisher linear discriminant analysis (LDA). This algorithm, which aims to produce a dimensional reduction that takes into account the different classes, has not succeeded in making a reduction that makes the data linearly separable, regardless of the amplitude of the dimensional reduction. As a result, a more complex classification algorithm was applied.  The Random Forest algorithm, which was chosen for its reasonable efficiency and performance, again failed in the majority of cases to find distinctive statistical characteristics for most genres. The only genre that obtain a noticeable classification score compared to chance is rock (62.0%, chance 54.9%). As a weighted average, the prediction of the 7 different genres (Caribbean and Caribbean-influenced songs have been withdrawn due to due to insufficient sample size) by the one-vs-all Random Forest algorithm represents an improvement of +3.5% compared to chance, i.e. a very low prediction capacity. The algorithm uses 100 trees with a maximum depth varying from 1 to 10 depending on the genre as this parameter is optimized individually for each genre. This performance of the prediction is clearly worsened by the dimensional reduction by PCA, even when the dimension is only reduced from 8 to 7 (+3.5% becomes +2.7%). This indicates that each feature is valuable for the prediction. The t-SNE is also unsuccessful at making that prediction better.
 
+Another approach was to try to find a number of genres by no longer relying on the existing list, but rather by trying to see which genres emerged from the data spontaneously. The Mean Shift algorithm, which has the advantage of not asking to specify the number of clusters to be formed, but using the statistical properties of the data distribution to determine the number and location of cluster centers, surprisingly classified the data into as many clusters as there are songs. Suspecting a possible effect of the curse of dimensionality, the data were subjected to a dimensional reduction by PCA, but only a negligible number of tiny clusters could be formed.
+
+To see if it was really possible to form clusters consistent with the data, the number of clusters was made fixed (K = 12) and the K-Means clustering algorithm was applied. Clusters of varying sizes (4 to 4255, median 2087) were thus formed. These clusters were compared to the actual genres to see if there was a correlation between genres and automatic classification. As can be seen in the matrix below, this is not the case.
+
+<img src="images/correlation_clusters_genres.png" alt="drawing" width="1200"/>   
 
 ### Interpretation
 
@@ -217,6 +223,10 @@ The fact that there is a greater proportion of songs listed as 'other', especial
 However, another explanation of the prevalence of 'other' at the specific given period could be the fact that these early years were the laboratory of diverse research and novelties in terms of musical genres and that many of them were not retained by history, despite the popularity of one song at some point.
 
 In a general way, this first set of results shows the great emergence of different musical styles over the studied period. The fact that we had to group the large amount of genres to more general classes and that this evolution is still perceivable is an interesting proof of that phenomenon. The great majority of top listed titles from which rock music benefits shows not only its popularity, but is also a hint of the diversity of subgenres that occurred within this style.
+
+#### 3. Machine learning
+
+The fact that machine learning prediction is only effective for rock suggests that either rock has more pronounced characteristics than other genres, or simply the presence of other genres in the corpus is not sufficient to allow the classification algorithm to be successfully trained. In the present case, the second option is preferred. On the other hand, the fact that the Fisher LDA does not allow to classify the different genres by maximizing the variance between the class centers is clearly an indication that the classes are strongly intertwined and that the variance within a class is high for the chosen characteristics. The variables that are considered most significant by the LDA algorithm, however, are valence and energy, the two perceptual variables. This suggests that the genre of music is strongly related to the perceptions that it generates, perhaps even more so than to technical and physical features. This hypothesis is reinforced by the fact that genres cannot be obtained by reverse engineering methods, consisting in reforming genres from features.
 
 ## Discussion 
 ### Arising Difficulties
