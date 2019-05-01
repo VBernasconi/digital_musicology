@@ -49,21 +49,21 @@ Finally, the corpus contains a total of 19,098 pieces of music representing 177,
 
 As we can see, most musical pieces are staying less that 20 weeks on chart, with a maximum lifespan of 42. However, thanks to the logarithmic scale, one can see that several orders of magnitude separate the number of musics that remain less than 18 weeks from those that remain more than 28 weeks on the chart. This means that beyond 18 weeks, the probability of a song remaining in the ranking drops sharply. Before this threshold, the probability of maintaining itself decreases linearly, which virtually corresponds to a plateau in this distribution curve.
 
-<img src="images/features_description.png" alt="drawing" width="450"/>
+<img src="images/features_description.png" alt="drawing" width="900"/>
 
 Hereover, a table containing the continuous features' statistics. The perceptual variables (energy and valence) are scored on a scale without unit from 0 to 1, slightly biased upwards, but well distributed. The average duration of the songs is about three and a half minutes, with a high variance.  Tempo is measured in beat per minute (bpm), with an average of two beats per second. Loudness is measured in dB. It should be remembered that this scale is logarithmic, and that the variance is therefore greater than it seems.
 
-<img src="images/songs_per_key.png" alt="drawing" width="450"/>
+<img src="images/songs_per_key.png" alt="drawing" width="900"/>
 
 
 One can observe that C is the most used root, followed by G, which is consistent with what we have seen in lectures. The diatonic scale is more used with the exception of B, which is a little less used that C#. Concerning the modality, 58% of the entries are classified as major, 18% as minor and 24% are not classified. For the time signature, 70% of the data are 4/4, 6% are 3/4, 0.6% are considered other (5:4 or 1:4) and 23.4% are not classified.
 
 
-<img src="images/entries_per_year.png" alt="drawing" width="450"/>
+<img src="images/entries_per_year.png" alt="drawing" width="900"/>
 
 In this plot, one can observe the first occurrence of the songs per year. As the years go by, the number of unique songs entering in the top 100 diminishes, which corresponds to a canonization of top musics in a year.
 
-<img src="images/corr_features.png" alt="drawing" width="450"/>
+<img src="images/corr_features.png" alt="drawing" width="900"/>
 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
