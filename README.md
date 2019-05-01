@@ -26,6 +26,8 @@ __Home repository__
 * _Extract_corpus.ipynb_ : Jupyter notebook containing the code used to isolate and unify the datasets from different sources, clean them, formate them and extract the corpus out of it
 * _Basic_statistics.ipynb_ : Jupyter notebook containing the code used to compute the basic statistics described in milestone2.md
 * _Exploratory_analysis.ipynb_ : Jupyter notebook containing the code used to compute the features change and the salient drifts, presented in milestone 3
+* _Machine_learning.ipynb_ : Jupyter notebook containing the code used to cluster the songs, and to investigate the characteristic features of the various genres, as presented in milestone 4
 * _milestone1.md_ : Project milestone 1 description
 * _milestone2.md_ : Project milestone 2 description
 * _milestone3.md_ : Project milestone 3 description – exploratory analysis
+* _milestone4.md_ : Project milestone 3 description – final results and interpretation
