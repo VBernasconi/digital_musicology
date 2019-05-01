@@ -17,7 +17,7 @@ Regarding our main research question, we developed three main hypothesis that wi
     * **key**: no specific hypothesis was determined regarding this feature.
     * **loudness**: it corresponds to the overall loudness of a track in decibels (dB). Our hypothesis would be to see an increase of loudness in rock-related genres musical pieces.
     * **duration**:  hypothesis is that the duration of musical pieces may tend to be shorter, regarding the growing stressful context.
-    * **time_signature**: our hypothesis is that, regarding the experimental artistic contexts, some new time signatures might arise. However there should be a high convergence to a 4:4 time signature.
+    * **time_signature**: our hypothesis is that, regarding the experimental artistic contexts, some new time signatures might arise. However there should be a high convergence to a 4/4 time signature.
     * **tempo**: our major hypothesis regarding this aspect is that musical pieces tend to have a faster tempo, regarding the stressful context for the US civil society (according to literature, an increase up to 120-125 beats per minute).
     * **mode**: according to what has been presented in class, we expect an increasing equilibrium between the repartition of major and minor modalities within musical pieces.
 
