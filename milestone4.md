@@ -94,7 +94,7 @@ One can see a dominance of the C and G tonics throughout the studied time range.
 
 ###### 1.1.2 Time signature
 <img src="images/yearly_features_change/time_signature.png" alt="drawing" width="900"/>
-In terms of time signature, one should note the largely leading use of 4-time during the studied period, which even seems to expand at the expense of the other types of time signatures. Hence, some experimental time signatures, such as the 1:4 or the 5:4 time signatures seem to vanish. The 3:4-time, which was still benefiting from a better percentage share in the early years studied, namely around the 60s, slowly decreases and seems to reach its lower peak around the mid 80s.
+In terms of time signature, it is important to acknowledge that, according to Spotify, the data represents "an estimaged overall time signature of a track. [...] The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4""<a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/">2018, Spotify</a>. The presence of a time signature of 1/4 is therefore an unexpected intruder and no explanation, other than the fact that it might have been an experimental time signature, was found regarding this point. However one should note the largely leading use of 4/4 during the studied period, which even seems to expand at the expense of the other types of time signatures. Hence, the 5/4 time signature seems to vanish. The 3/4 time, which was still benefiting from a better percentage share in the early years studied, namely around the 60s, slowly decreases and seems to reach its lower peak around the mid 80s.
 
 ###### 1.1.3 Mode
 <img src="images/yearly_features_change/mode.png" alt="drawing" width="900"/>
