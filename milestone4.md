@@ -49,21 +49,21 @@ Finally, the corpus contains a total of 19,098 pieces of music representing 177,
 
 As we can see, most musical pieces are staying less that 20 weeks on chart, with a maximum lifespan of 42. However, thanks to the logarithmic scale, one can see that several orders of magnitude separate the number of musics that remain less than 18 weeks from those that remain more than 28 weeks on the chart. This means that beyond 18 weeks, the probability of a song remaining in the ranking drops sharply. Before this threshold, the probability of maintaining itself decreases linearly, which virtually corresponds to a plateau in this distribution curve.
 
-<img src="images/features_description.png" alt="drawing" width="900"/>
+<img src="images/features_description.png" alt="drawing" width="450"/>
 
 Hereover, a table containing the continuous features' statistics. The perceptual variables (energy and valence) are scored on a scale without unit from 0 to 1, slightly biased upwards, but well distributed. The average duration of the songs is about three and a half minutes, with a high variance.  Tempo is measured in beat per minute (bpm), with an average of two beats per second. Loudness is measured in dB. It should be remembered that this scale is logarithmic, and that the variance is therefore greater than it seems.
 
-<img src="images/songs_per_key.png" alt="drawing" width="900"/>
+<img src="images/songs_per_key.png" alt="drawing" width="450"/>
 
 
 One can observe that C is the most used root, followed by G, which is consistent with what we have seen in lectures. The diatonic scale is more used with the exception of B, which is a little less used that C#. Concerning the modality, 58% of the entries are classified as major, 18% as minor and 24% are not classified. For the time signature, 70% of the data are 4/4, 6% are 3/4, 0.6% are considered other (5:4 or 1:4) and 23.4% are not classified.
 
 
-<img src="images/entries_per_year.png" alt="drawing" width="900"/>
+<img src="images/entries_per_year.png" alt="drawing" width="450"/>
 
 In this plot, one can observe the first occurrence of the songs per year. As the years go by, the number of unique songs entering in the top 100 diminishes, which corresponds to a canonization of top musics in a year.
 
-<img src="images/corr_features.png" alt="drawing" width="900"/>
+<img src="images/corr_features.png" alt="drawing" width="450"/>
 
 One can observe that the physical variables (mode, time_signature, tempo, loudness, and duration) are only weakly correlated. The perceptual variables (energy and valence) are correlated with each other and to some of the physical variables. This is not surprising since both are covering similar perceptions of music. Energy explains the subject's perceptual sense of energy, while valence quantifies the subject's perceived positive feeling of the music. Therefore, the high correlation of energy with loudness is also intuitively expected. An interesting correlation to note is also that of energy and valence with time signature.
 
@@ -160,21 +160,21 @@ This graph represents the sum of the salient peaks, i.e. the projection of all s
 #### 2. Musical genres
 The distribution of genres was plotted using heatmaps:
 
-<img src="images/genre_distribution.png" alt="drawing" width="2000"/>
+<img src="images/genre_distribution.png" alt="drawing" width="2500"/>
 
 Because of the dominance of the 'other' category, which makes it hard to perceive the distribution of other main genres, it was decided to remove it from following heatmap. Indeed, the 'other' category encompass non-musical genre classifications, such as '**adult standards**', '**christmas**' or '**mellow gold**', as well as all **_None_** attributed titles. The removal of 'other' should hence not affect the results but provides more visibility.
 
-<img src="images/genre_distribution_nother.png" alt="drawing" width="2000"/>
+<img src="images/genre_distribution_nother.png" alt="drawing" width="2500"/>
 
 As we can see on these two heatmaps, there is a prevalence of rock musical pieces between 1964 and 1990. Country music saw a decrease of popularity throughout the 70s and hip hop songs appeared later, with early uses in 1964 and 1969 before settling down in the late 70s. In order to better understand these movements of music genres, a similar heatmap with a normalized distribution for each genre was created:
 
-<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="2000"/>
+<img src="images/genre_distribution_perc_nother.png" alt="drawing" width="2500"/>
 
 On the above, we can clearly see that hip hop seems to have reached its pick of use for the studied time range in the early 90s, similarly to Caribbean and Caribbean-influenced songs. Other music genres benefit from a more linear distribution over time.
 
 A third heatmap with a normalized distribution per year was finally produced in order to better see the dominance of some genres for each year.
 
-<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2000"/>
+<img src="images/genre_distribution_perc_year_nother.png" alt="drawing" width="2500"/>
 
 #### 3. Machine learning
 Various machine learning techniques have been applied in order to better understand the essence of genres and their differences. First, the categorical variables were subjected to dummy encoding. The first technique that was applied was a Fisher linear discriminant analysis (LDA). This algorithm, which aims to produce a dimensional reduction that takes into account the different classes, has not succeeded in making a reduction that makes the data linearly separable, regardless of the amplitude of the dimensional reduction. As a result, a more complex classification algorithm was applied.  The Random Forest algorithm, which was chosen for its reasonable efficiency and performance, again failed in the majority of cases to find distinctive statistical characteristics for most genres. The only genre that obtain a noticeable classification score compared to chance is rock (62.0%, chance 54.9%). As a weighted average, the prediction of the 7 different genres (Caribbean and Caribbean-influenced songs have been withdrawn due to due to insufficient sample size) by the one-vs-all Random Forest algorithm represents an improvement of +3.5% compared to chance, i.e. a very low prediction capacity. The algorithm uses 100 trees with a maximum depth varying from 1 to 10 depending on the genre as this parameter is optimized individually for each genre. This performance of the prediction is clearly worsened by the dimensional reduction by PCA, even when the dimension is only reduced from 8 to 7 (+3.5% becomes +2.7%). This indicates that each feature is valuable for the prediction. The t-SNE is also unsuccessful at making that prediction better.
