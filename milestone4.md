@@ -116,6 +116,7 @@ The second graph shows three major events where a positive change appears in com
 
 ###### 1.1.5 Duration
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
+<img src="images/duration_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/duration.png" alt="drawing" width="900"/>
 The first graph clearly shows an increase of the duration of musical pieces through time. From 1959 to 1964, the increase is really small et not really significant. However from year 1964 and until year 1979, there is a significant increase of duration of musical pieces as it goes from 1550000 ms (around 2,5 minutes) to 265000 ms (more than 4,5 minutes). After that, there is a small decrease where the duration is closer to 240000 ms (4 minutes), followed by a small increase that leads again the duration to around 4,5 minutes.
 
@@ -124,6 +125,7 @@ The second graph shows that two major events have happened. The first one occurr
 
 ###### 1.1.6 Tempo
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
+<img src="images/tempo_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 The first graph shows that there is not really a difference in tempo through the years, the changes that appear are not significant because of the confidence interval.
 
@@ -132,11 +134,13 @@ No significant event can be observed in the tempo salient peaks figure.
 
 ###### 1.1.7 Energy
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
+<img src="images/energy_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/energy.png" alt="drawing" width="900"/>
 The energy tends to rise slowly during the whole period, in four consequent steps. A first significant step occurs between 1962 and 1964. The second step, in 1970, appears to be driven by a salient event in June-July 1970. The third step takes place between 1973 and 1974 and the fourth and last step occurs between 1982 and 1984 and is preceded by a low-bound event which begins in September 1981 and ends in January 1982.
 
 ###### 1.1.8 Valence
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
+<img src="images/valence_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/valence.png" alt="drawing" width="900"/>
 The valence seems to be relatively stable until 1987. It falls significantly and durably at the end of the Cold War. This decrease is progressive rather than sudden but consequent though. 
 
