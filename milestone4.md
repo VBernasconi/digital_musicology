@@ -108,6 +108,7 @@ Throughout the studied period, one can see a leading majority in the use of majo
 
 ###### 1.1.4 Loudness
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
+<img src="images/loudness_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 The first graph clearly shows an augmentation of the overall loudness of musical pieces. Relatively to the range of value that this feature can take, from -60dB to 0dB, this might not seem such a big increase as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The periods where the increase was the bigger were from 1972 to 1984 and since 1993.
 
