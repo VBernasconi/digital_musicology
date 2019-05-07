@@ -134,6 +134,8 @@ The third graph shows that two major events have happened. The first one occurre
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 The first graph shows that there is not really a difference in tempo through the years, the changes that appear are not significant because of the confidence interval.
 
+The second graph shows that for each genre there is no real difference in tempo through the years. It is really flat for pop, rock and r&b and soul genres, and the changes happening in the other genres are not significant regarding the confidence interval.
+
 No significant event can be observed in the tempo salient peaks figure.
 
 
