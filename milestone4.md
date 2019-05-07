@@ -185,10 +185,9 @@ To see if it was really possible to form clusters consistent with the data, the 
 
 <img src="images/correlation_clusters_genres.png" alt="drawing" width="1200"/>   
 
-### Interpretation
+### Discussion of final results
 
-#### 1. Features evolution
-##### 1.1 Global changes
+#### 1. Features evolution (global and genre-specific changes)
 As we have seen from the results of the [root changes](https://github.com/ValentineCmoi/digital_musicology/blob/master/milestone3.md#111-root-change), there is a certain homogeneity in-between the different keys used and the traditional use of C seems to decrease a bit toward the end of the studied period. A possible interpretation would be the fact that the end of the 21st Century was at the heart of musical explorations, which pairs with the arrival of new musical genres. Indeed, the last half of the Century saw the emergence of rock, pop or hip hop, just to name a few. This emergence is probably accompanied by a slight shift in the conventional musical instruments used, such as the guitar for rock songs.  Hence, a possible explanation of this small modulation of root used would be that composers had to find solutions in order to better suit the majority of instruments used. 
 
 Regarding these results and the comparison with musical genres, it is interesting to see from <a href= “https://insights.spotify.com/int/2017/10/03/genres-and-key-signatures/”>Spotify insight</a> the different key signatures of each style. From their work, we can see that Rock music tends to use both C and D followed by G, which explains the similar repartition of these three roots in our plot, since it seems that the genre is leading the Billboard chart in greater parts of our studied period.
@@ -209,23 +208,6 @@ As explained in the introduction, valence is a perceptual variable describing th
 
 On the other hand, the perceived [energy](https://github.com/ValentineCmoi/digital_musicology/blob/master/milestone3.md#117-energy) of music rises by nearly a third over the period. A very clear increase. This increase echoes also the increase in loudness. Both seem to be part of a broader economical-artistic trend that is reflected in many fields, <a href="https://journals.sagepub.com/doi/abs/10.1068/i0441aap">including e.g. cinema</a>. This movement is characterized by more frenetic artistic creations, always more stimulating for customers, in a creative context that addresses ever-increasing audiences.
 
-##### 1.2 Historical interpretations
-
-| Event number | Dates                  | Features changes                                |
-|--------------|------------------------|-------------------------------------------------|
-| 1            | Dec. 1959 – Feb. 1960  | low energy, low loudness                        |
-| 2            | Dec. 1960 – Feb. 1961  | low energy, low tempo, root change              |
-| 3            | Nov. 1963 – May 1964   | high loudness, short duration                   |
-| 4            | Jul. 1974 – Sep. 1974  | more 4/4                                        |
-| 5            | Mar. 1979 – Oct. 1979  | high valence, high tempo, more 4/4, root change |
-| 6            | Sep. 1981 – Aug. 1982  | low valence, low energy, short duration         |
-| 7            | May. 1983 – Jul. 1983  | high tempo, more 4/4                            |
-| 8            | Jan. 1984 – Apr. 1984  | high loudness                                   |
-| 9            | Apr. 1987 – Jun. 1987  | more 4/4                                        |
-| 10           | Oct. 1989 – Mar. 1990  | long duration, more 4/4                         |
-
-The above table is a summary of matching dates and feature changes. However, it seems difficult to find direct events that could have impacted these changes. In terms of music styles, from a brief overview one can easily see the gentle decrease of popularity of country music, which is strongly related to the American culture. This decrease gradually let place to rock, which can be understood as an opening to international culture, as this genre find great influences and production centers in Europe as well. This ‘internalization’ of musical culture might find its roots in the rising globalisation phenomenon that is a direct effect of arising diffusion tools, such as television. Further research could thus be conducted toward this phenomenon in order to better understand the evolution of musical trends. Indeed, it seems from a first approach quite difficult to link specific historical events with feature changes that occurred in the studied period of time. Another approach would be to apprehend these changes more globally and understand the evolution of a society not only from a perspective of specific social events that might have taken place, but also it terms of technical progress and changes that transformed the everyday life of citizens and the way population changed its consumption of music and cultural products.
-
 #### 2. Musical genres
 
 With the different heatmaps generated, we can clearly see a dominance of rock music from the mid-60s to the early 90s. Before the rise of rock music, country music seems to have been more dominant. One can also see that musical genres, such as hip hop, Caribbean and electronic appeared later on the musical scene. 
@@ -240,27 +222,8 @@ In a general way, this first set of results shows the great emergence of differe
 
 The fact that machine learning prediction is only effective for rock suggests that either rock has more pronounced characteristics than other genres, or simply the presence of other genres in the corpus is not sufficient to allow the classification algorithm to be successfully trained. In the present case, the second option is preferred. On the other hand, the fact that the Fisher LDA does not allow to classify the different genres by maximizing the variance between the class centers is clearly an indication that the classes are strongly intertwined and that the variance within a class is high for the chosen characteristics. The variables that are considered most significant by the LDA algorithm, however, are valence and energy, the two perceptual variables. This suggests that the genre of music is strongly related to the perceptions that it generates, perhaps even more so than to technical and physical features. This hypothesis is reinforced by the fact that genres cannot be obtained by reverse engineering methods, consisting in reforming genres from features.
 
-## Discussion of final results
-### Arising Difficulties
 
-A major difficulty encountered was the diversity of genres. It was a discovery at first, because such a variety was not expected. We then had to find a suitable classification in order to group these categories. Many music styles classifications exist and can depend on the year such classifications were created and the prevalence of specific music styles. However, big classes, such as '**Rock**', '**Pop**', '**Blues**' and '**Jazz**' seem to be common to most of them. We finally chose a classification that could both show the emergence of new styles and would show the diversity of styles presented in the USA, at the years of our dataset. We then had to find an easily retrievable classification with corresponding subgenres. In the end, the music style classification from AllMusic, made available by Wikipedia, was chosen. It corresponds the following classification:
-'**blues**', '**caribbean and caribbean-influenced**', '**r&b and soul**', '**rock**', '**country**', '**electronic music**', '**folk**', '**hip hop**', '**jazz**', '**latin**', '**pop**'.
-
-### Interesting Problems
-
-One of our most unexpected result was the tempo. Indeed, our hypothesis (see Research Question and Hypothesis) was that musical pieces tend to have a faster tempo over the years, regarding the stressful context for the US civil society. As explained in the Results and Interpretation sections, we discovered, with the resulting graph of the representation of tempo through the studied period of time, that tempo does not change significantly. However, as this graph represents the aggregation of all genres, it would be interesting to conduct further research to see if a change could be perceived for specific musical genres.
-
-Another problem is the discutability of the time signature results. Indeed, as Spotify only takes into account time signatures on 4, ranging from 3 to 7, it is difficult to determine the amount of titles that were given an erroneous signature in order to fit this defined format. Thereby, we discovered that most songs were given a 4/4 time signature and, despite the fact that according to sources on western music this result seems to make sense, it is not possible to check the quantity of titles that actually present in reality a different time signature than the one they were attributed.
-
-### Next steps towards the final analysis
-
-Further research will have to be done in terms of feature changes for each of the main genres. Such information might help better understanding how different musical communities evolved over years and if they could be more easily put in correlation with historical events or cultural changes. 
-
-Regarding the historical interpretation of these results, more research will have to be done to find appropriate big social changes or political decisions that could have had an impact on feature changes. Other paths, such as a broader analyze of shifts in cultural products consumption due to new technologies and globalization could be considered, as discussed in the interpretation of the results.
-
-A last step would be to perform machine learning on the dataset in order to better perceive the correlation between the features and their corresponding genre. A first approach would be to perform a Fisher LDA in order to see characteristic features of a genre. A second one would be a reverse engineering approach. The latter would consist in performing an unsupervised clustering of the data, such as Mean Shift clustering, in order to see if some of the genres can naturally emerge from the musical features, and to observe the way in which genres are interwoven.
-
-### Impact of the cold war on the dataset
+#### 4. About the impact of the cold war on the dataset
 
 It seems difficult to find direct historical events that could have impacted the salient changes in the musical features from the Billboard chart. Before starting any speculations on correlations between history and music trends, it might be interesting to have a broader picture of the density of events of the studied period. Indeed, the cold war does not only englobe political major decisions but is the theatre of great shifts in the American society as well. Where one could have thought that the nation would have lived a recession after the trauma of the Red Scare lead by the senator McCarthy in the early years of the cold war, the country seems to have in fact opened its doors to positive changes. Not only they involved population within its territory, but also a majority of western countries, as we can see with the movements of sexual liberation, the legalization of contraception and legalization of abortion, which occurred in 1973 in the USA. The fight against segregation, finally abolished in 1964, shows that the epoch also profoundly changed toward minorities. However, one should also not forget the devastating impact of the Vietnam war from 1965 to 1973 on American soldiers, quickly forgotten by their own people at their return to the mother land. 
 
@@ -297,3 +260,44 @@ It seems that a great work was conducted during the 70s and 80s in order to unde
 ## Milestone 5 project repository
 
 Milestone 5 project repository can be found under the following link <a href= https://www.overleaf.com/read/xynqscwthvvy>https://www.overleaf.com/read/xynqscwthvvy</a>
+
+
+
+##### 1.2 Historical interpretations
+
+| Event number | Dates                  | Features changes                                |
+|--------------|------------------------|-------------------------------------------------|
+| 1            | Dec. 1959 – Feb. 1960  | low energy, low loudness                        |
+| 2            | Dec. 1960 – Feb. 1961  | low energy, low tempo, root change              |
+| 3            | Nov. 1963 – May 1964   | high loudness, short duration                   |
+| 4            | Jul. 1974 – Sep. 1974  | more 4/4                                        |
+| 5            | Mar. 1979 – Oct. 1979  | high valence, high tempo, more 4/4, root change |
+| 6            | Sep. 1981 – Aug. 1982  | low valence, low energy, short duration         |
+| 7            | May. 1983 – Jul. 1983  | high tempo, more 4/4                            |
+| 8            | Jan. 1984 – Apr. 1984  | high loudness                                   |
+| 9            | Apr. 1987 – Jun. 1987  | more 4/4                                        |
+| 10           | Oct. 1989 – Mar. 1990  | long duration, more 4/4                         |
+
+The above table is a summary of matching dates and feature changes. However, it seems difficult to find direct events that could have impacted these changes. In terms of music styles, from a brief overview one can easily see the gentle decrease of popularity of country music, which is strongly related to the American culture. This decrease gradually let place to rock, which can be understood as an opening to international culture, as this genre find great influences and production centers in Europe as well. This ‘internalization’ of musical culture might find its roots in the rising globalisation phenomenon that is a direct effect of arising diffusion tools, such as television. Further research could thus be conducted toward this phenomenon in order to better understand the evolution of musical trends. Indeed, it seems from a first approach quite difficult to link specific historical events with feature changes that occurred in the studied period of time. Another approach would be to apprehend these changes more globally and understand the evolution of a society not only from a perspective of specific social events that might have taken place, but also it terms of technical progress and changes that transformed the everyday life of citizens and the way population changed its consumption of music and cultural products.
+
+
+
+## Discussion of final results
+### Arising Difficulties
+
+A major difficulty encountered was the diversity of genres. It was a discovery at first, because such a variety was not expected. We then had to find a suitable classification in order to group these categories. Many music styles classifications exist and can depend on the year such classifications were created and the prevalence of specific music styles. However, big classes, such as '**Rock**', '**Pop**', '**Blues**' and '**Jazz**' seem to be common to most of them. We finally chose a classification that could both show the emergence of new styles and would show the diversity of styles presented in the USA, at the years of our dataset. We then had to find an easily retrievable classification with corresponding subgenres. In the end, the music style classification from AllMusic, made available by Wikipedia, was chosen. It corresponds the following classification:
+'**blues**', '**caribbean and caribbean-influenced**', '**r&b and soul**', '**rock**', '**country**', '**electronic music**', '**folk**', '**hip hop**', '**jazz**', '**latin**', '**pop**'.
+
+### Interesting Problems
+
+One of our most unexpected result was the tempo. Indeed, our hypothesis (see Research Question and Hypothesis) was that musical pieces tend to have a faster tempo over the years, regarding the stressful context for the US civil society. As explained in the Results and Interpretation sections, we discovered, with the resulting graph of the representation of tempo through the studied period of time, that tempo does not change significantly. However, as this graph represents the aggregation of all genres, it would be interesting to conduct further research to see if a change could be perceived for specific musical genres.
+
+Another problem is the discutability of the time signature results. Indeed, as Spotify only takes into account time signatures on 4, ranging from 3 to 7, it is difficult to determine the amount of titles that were given an erroneous signature in order to fit this defined format. Thereby, we discovered that most songs were given a 4/4 time signature and, despite the fact that according to sources on western music this result seems to make sense, it is not possible to check the quantity of titles that actually present in reality a different time signature than the one they were attributed.
+
+### Next steps towards the final analysis
+
+Further research will have to be done in terms of feature changes for each of the main genres. Such information might help better understanding how different musical communities evolved over years and if they could be more easily put in correlation with historical events or cultural changes. 
+
+Regarding the historical interpretation of these results, more research will have to be done to find appropriate big social changes or political decisions that could have had an impact on feature changes. Other paths, such as a broader analyze of shifts in cultural products consumption due to new technologies and globalization could be considered, as discussed in the interpretation of the results.
+
+A last step would be to perform machine learning on the dataset in order to better perceive the correlation between the features and their corresponding genre. A first approach would be to perform a Fisher LDA in order to see characteristic features of a genre. A second one would be a reverse engineering approach. The latter would consist in performing an unsupervised clustering of the data, such as Mean Shift clustering, in order to see if some of the genres can naturally emerge from the musical features, and to observe the way in which genres are interwoven.
