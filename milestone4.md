@@ -5,7 +5,7 @@
 ## Introduction
 The Cold War period, whose years from 1959 to 1995 will be analysed in the present project, saw the rise of many major and diverse cultural movements. This flourishing time also enabled a large increase in the number of musical genres. Regarding these prompt changes and the socio-economico-political climate, we will try to analyse how music changed during that period by focusing more specifically on the Billboard Charts that provides the weekly top 100 listened musical pieces in the United States, based on sales and radio play.
 
-## Research Question and hypothesis
+## Research question and hypothesis
 
 The main research question concerns the way music changed from 1959 to 1995 and how this evolution has been impacted by historical and social context.
 
