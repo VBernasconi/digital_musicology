@@ -20,6 +20,8 @@ Many genres can be classified as subparts of the major genres, e.g. bubble gum p
 
 Another big assumption is linked to the perceptual variables. The calibration of the energy and valence of a music was performed in the 2010s, whereas the period studied begins in 1959. Therefore, we assume that the perception of music in the Western world has changed little during these 50 years.
 
+The third assumption considers that the margin of error of the Spotify algorithm for variable extraction is reasonable. 
+
 ## Dataset
 The research is based on the Kaggle Billboard Top 100 dataset, composed of the Billboard weekly list, between 1955 and 2017. This table is composed of 300'600 rows and eight columns, containing respectively the date of the week, the rank, the song title, the artist name, the number of weeks on charts, the musical piece's year of release, the track's popularity on Spotify and the artist popularity on Spotify. For the present study, only data contained between January 1959 and December 1995 were kept. 
 
