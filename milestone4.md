@@ -73,7 +73,7 @@ Throughout the studied period, one can see a leading majority in the use of majo
 <img src="images/loudness_by_genre.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 
-The first graph clearly shows a significant augmentation of the overall loudness of musical pieces. Relatively to the range of values that this feature can take, namely from -60dB to 0dB, it might not seem such a big increase, as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The increase was bigger from 1972 to 1984, and after 1993.
+The first graph clearly shows a significant augmentation of the overall loudness in musical pieces. Relatively to the range of values that this feature can take, namely from -60dB to 0dB, it might not seem such a big increase, as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The increase was bigger from 1972 to 1984, and after 1993.
 
 The second graph shows that there are almost no changes in loudness for the pop, rock, and R&B and soul genres. In folk genre, there is an increase in loudness during the 60s, but the sample is not big enough to confirm this trend. For jazz and country genre, there is a small increase since the mid 80s, but as before, that trend cannot be confirmed, especially for jazz.
 
