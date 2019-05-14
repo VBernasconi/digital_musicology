@@ -71,6 +71,9 @@ Throughout the studied period, one can see a leading majority in the use of majo
 ###### 1.1.4 Loudness
 <img src="images/yearly_features_change/loudness.png" alt="drawing" width="900"/>
 <img src="images/loudness_by_genre.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/loudness_folk.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/loudness_jazz.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/loudness_country.png" alt="drawing" width="900"/>
 <img src="images/drifts/loudness.png" alt="drawing" width="900"/>
 
 The first graph clearly shows a significant augmentation of the overall loudness in musical pieces. Relatively to the range of values that this feature can take, namely from -60dB to 0dB, it might not seem such a big increase, as it goes from -11,5dB to -8dB. However, one should recall that the dB scale is logarithmic. The increase was bigger from 1972 to 1984, and after 1993.
@@ -106,12 +109,18 @@ The first graph shows that there is no real change in tempo through the years, t
 ###### 1.1.7 Energy
 <img src="images/yearly_features_change/energy.png" alt="drawing" width="900"/>
 <img src="images/energy_by_genre.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/energy_folk.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/energy_jazz.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/energy_country.png" alt="drawing" width="900"/>
 <img src="images/drifts/energy.png" alt="drawing" width="900"/>
 The energy tends to rise slowly during the whole period, in four consequent steps. A first major step occurs between 1962 and 1964. The second step, in 1970, appears to be driven by a salient event from June to July 1970. The third step takes place between 1973 and 1974 and the fourth and last step occurs between 1982 and 1984 and is preceded by a low-bound event which begins in September 1981 and ends in January 1982.
 
 ###### 1.1.8 Valence
 <img src="images/yearly_features_change/valence.png" alt="drawing" width="900"/>
 <img src="images/valence_by_genre.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/valence_folk.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/valence_jazz.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/valence_country.png" alt="drawing" width="900"/>
 <img src="images/drifts/valence.png" alt="drawing" width="900"/>
 The valence seems to be relatively stable until 1987. It falls significantly and durably at the end of the Cold War. This decrease is progressive rather than sudden but still consequent. 
 
