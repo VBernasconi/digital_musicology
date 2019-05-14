@@ -82,6 +82,9 @@ The third graph shows three major events where a positive change appears in comp
 ###### 1.1.5 Duration
 <img src="images/yearly_features_change/duration.png" alt="drawing" width="900"/>
 <img src="images/duration_by_genre.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/duration_folk.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/duration_jazz.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/duration_country.png" alt="drawing" width="900"/>
 <img src="images/drifts/duration.png" alt="drawing" width="900"/>
 
 The first graph clearly shows an increase of the duration of musical pieces through time. From 1959 to 1964, the increase is really small. However from 1964 and until 1979, there is a significant increase of duration of music pieces as it goes from 1550000 ms (around 2,5 minutes) to 265000 ms (more than 4,5 minutes). After that, there is a small decrease where the duration is closer to 240000 ms (4 minutes), followed by a small increase that leads again to a duration of about 4,5 minutes.
