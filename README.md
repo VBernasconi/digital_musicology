@@ -29,6 +29,7 @@ __Home repository__
 * _Extract_corpus.ipynb_ : Jupyter notebook containing the code used to isolate and unify the datasets from different sources, clean them, formate them and extract the corpus out of it
 * _Basic_statistics.ipynb_ : Jupyter notebook containing the code used to compute the basic statistics described in milestone2.md
 * _Exploratory_analysis.ipynb_ : Jupyter notebook containing the code used to compute the features change and the salient drifts, presented in milestone 3
+*  _Exploratory_analysis_by_genre.ipynb_ : Jupyter notebook containing the code used to compute the features change by genre and the scatter plots for jazz, country and folk genre, presented in milestone 4
 * _Machine_learning.ipynb_ : Jupyter notebook containing the code used to cluster the songs, and to investigate the characteristic features of the various genres, as presented in milestone 4
 * _Genres_classification.ipynb_ : Jupyter notebook containing the code used to classify the subgenres into greater categories of genres based on the classification retrieved with the help of Musical_genres_scrapper.ipynb. Contains also research on data with time signature 1/4
 * _Musical_genres_scrapper.ipynb_ : Jupyter notebook containing the code used to retrieve the main genre classification from Wikipedia
