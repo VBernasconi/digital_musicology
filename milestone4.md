@@ -96,6 +96,9 @@ The third graph shows that two major events have happened. The first one occurre
 ###### 1.1.6 Tempo
 <img src="images/yearly_features_change/tempo.png" alt="drawing" width="900"/>
 <img src="images/tempo_by_genre.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/tempo_folk.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/tempo_jazz.png" alt="drawing" width="900"/>
+<img src="images/scatter_plots/tempo_country.png" alt="drawing" width="900"/>
 <img src="images/drifts/tempo.png" alt="drawing" width="900"/>
 
 The first graph shows that there is no real change in tempo through the years, the changes that appear are not significant. The second graph shows that for each genre there is no real change in tempo through the years. It is really flat for pop, rock and r&b and soul genres. No major event can be observed in the tempo salient peaks figure.
